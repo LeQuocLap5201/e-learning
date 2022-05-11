@@ -1,13 +1,61 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "antd/dist/antd.min.css";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import NotFoundPage from "./NotFoundPage";
+import Admin from "./Admin";
+import Student from "./Student";
+import CertificatesDetail from "./CertificatesDetail";
+import LoginAdmin from "./Admin/pages/LoginAdmin";
+import LayoutAdmin from "./Admin/pages/LayoutAdmin";
+import MembersAdmin from "./Admin/pages/MembersAdmin";
+import StudiesAdmin from "./Admin/pages/StudiesAdmin";
+import EtestsAdmin from "./Admin/pages/EtestsAdmin";
+import CertificatesAdmin from "./Admin/pages/CertificatesAdmin";
+import ResultsAdmin from "./Admin/pages/ResultsAdmin";
+import UsersAdmin from "./Admin/pages/UsersAdmin";
+import AddMemberAdmin from "./Admin/pages/AddMemberAdmin";
+import DetailMemberAdmin from "./Admin/pages/DetailMemberAdmin";
+import AddStudiesAdmin from "./Admin/pages/AddStudiesAdmin";
+import DetailStudyAdmin from "./Admin/pages/DetailStudyAdmin";
+import AddEtestsAdmin from "./Admin/pages/AddEtestsAdmin";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Navigate to={"/student"} />} />
+          <Route path="student" element={<Student />} />
+          <Route path="admin" element={<Admin />}>
+            <Route path="" element={<LayoutAdmin />}>
+              <Route index element={<Navigate to={"members"} />} />
+              <Route path="members" element={<MembersAdmin />} />
+              <Route path="members/add" element={<AddMemberAdmin />} />
+              <Route path="members/:memberId" element={<DetailMemberAdmin />} />
+              <Route path="studies" element={<StudiesAdmin />} />
+              <Route path="studies/add" element={<AddStudiesAdmin />} />
+              <Route path="studies/:studyId" element={<DetailStudyAdmin />} />
+              <Route path="e-tests" element={<EtestsAdmin />} />
+              <Route path="e-tests/add" element={<AddEtestsAdmin />} />
+              <Route path="certificates" element={<CertificatesAdmin />} />
+              <Route path="results" element={<ResultsAdmin />} />
+              <Route path="users" element={<UsersAdmin />} />
+            </Route>
+            <Route path="login" element={<LoginAdmin />} />
+          </Route>
+          <Route
+            path="certificates/:certificatesId"
+            element={<CertificatesDetail />}
+          />
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

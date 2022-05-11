@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #cacaca;
+}

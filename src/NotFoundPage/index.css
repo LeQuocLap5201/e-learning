@@ -1,0 +1,11 @@
+.page404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+
+.page404 .svg {
+  height: 100%;
+}

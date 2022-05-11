@@ -1,0 +1,14 @@
+.filter-admin .ant-input-number,
+.filter-admin .ant-select,
+.filter-admin .ant-picker {
+  width: 100%;
+}
+
+.filter-admin,
+.filter-admin .filter-admin__main {
+  margin-bottom: 15px;
+}
+
+.filter-admin .filter-admin__main .ant-row {
+  margin-bottom: 4px;
+}

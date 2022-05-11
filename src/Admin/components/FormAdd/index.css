@@ -1,0 +1,8 @@
+.input-required {
+  color: #ff4d4f;
+  font-size: 14px;
+}
+
+.member-admin form#member-admin .ant-form-item {
+  margin-bottom: 0;
+}

@@ -1,0 +1,13 @@
+.step-first .ant-upload.ant-upload-select-picture-card {
+  width: 200px;
+  height: 200px;
+}
+
+.step-first .ant-input-number,
+.step-second .ant-input-number {
+  width: 100%;
+}
+
+.step-second .ant-form-item {
+  margin-bottom: 0;
+}
