@@ -39,7 +39,7 @@ export default function FormDetailStudy() {
   }, []);
 
   return (
-    <Form form={form} className="form-detail-study">
+    <Form form={form} className="form-detail form-detail-study">
       <Card
         title={
           <>
@@ -144,12 +144,16 @@ export default function FormDetailStudy() {
                   style={{ marginBottom: 10 }}
                   name="target"
                   rules={[
-                    { required: true, message: "Vui lòng chọn đối tượng học" },
+                    {
+                      required: true,
+                      message: "Vui lòng chọn đối tượng học",
+                      type: "array",
+                    },
                   ]}
                 >
                   <Select
                     showSearch
-                    allowClear
+                    mode="multiple"
                     placeholder="Đối tượng học"
                     optionFilterProp="children"
                     filterOption={(input, option) =>

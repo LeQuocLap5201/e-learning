@@ -2,3 +2,8 @@
   margin-top: 15px;
 }
 
+.thematic-second .thematic-item button:first-child {
+  text-align: left;
+  min-width: 375px;
+  margin-right: 10px;
+}

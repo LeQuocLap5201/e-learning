@@ -108,7 +108,7 @@ export default function MembersAdmin() {
       <Form.Item name="status">
         <Select placeholder="Trạng thái" allowClear>
           <Select.Option value={1}>Hoạt động</Select.Option>
-          <Select.Option value={2}>Đã khóa</Select.Option>
+          <Select.Option value={-1}>Đã khóa</Select.Option>
         </Select>
       </Form.Item>
     </Col>,

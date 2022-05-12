@@ -36,7 +36,7 @@ export default function MenuAdmin() {
         </Menu.Item>
       </Menu.SubMenu>
       <Menu.Item key="users">
-        <Link to="users">Quản lý bài người dùng</Link>
+        <Link to="users">Quản lý người dùng</Link>
       </Menu.Item>
     </Menu>
   );

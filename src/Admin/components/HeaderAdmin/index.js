@@ -7,6 +7,7 @@ import {
   DownOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 
@@ -14,8 +15,10 @@ export default function HeaderAdmin() {
   const menu = (
     <Menu>
       <Menu.Item key="0">
-        <ContainerOutlined />
-        Thông tin người dùng
+        <Link to="/admin/users/1">
+          <ContainerOutlined />
+          Thông tin người dùng
+        </Link>
       </Menu.Item>
       <Menu.Item key="1">
         <LogoutOutlined />

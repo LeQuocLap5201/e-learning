@@ -1,0 +1,12 @@
+.question,
+.question__title {
+  width: 100%;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question__title {
+  margin-bottom: 10px;
+}

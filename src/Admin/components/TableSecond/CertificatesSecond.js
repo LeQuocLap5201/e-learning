@@ -38,10 +38,7 @@ const columns = [
     title: "File Certificate",
     render: (certificateId) => (
       <>
-        <Link
-          style={{ color: "#000" }}
-          to={`/admin/certificates/${certificateId}`}
-        >
+        <Link style={{ color: "#000" }} to={`/certificates/${certificateId}`}>
           FileCertificate.PDF
         </Link>
         <Button

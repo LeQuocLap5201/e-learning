@@ -22,6 +22,10 @@ import DetailMemberAdmin from "./Admin/pages/DetailMemberAdmin";
 import AddStudiesAdmin from "./Admin/pages/AddStudiesAdmin";
 import DetailStudyAdmin from "./Admin/pages/DetailStudyAdmin";
 import AddEtestsAdmin from "./Admin/pages/AddEtestsAdmin";
+import DetailEtestAdmin from "./Admin/pages/DetailEtestAdmin";
+import DetailCertificateAdmin from "./Admin/pages/DetailCertificateAdmin";
+import AddUsersAdmin from "./Admin/pages/AddUsersAdmin";
+import DetailUserAdmin from "./Admin/pages/DetailUserAdmin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -42,9 +46,16 @@ root.render(
               <Route path="studies/:studyId" element={<DetailStudyAdmin />} />
               <Route path="e-tests" element={<EtestsAdmin />} />
               <Route path="e-tests/add" element={<AddEtestsAdmin />} />
+              <Route path="e-tests/:testId" element={<DetailEtestAdmin />} />
               <Route path="certificates" element={<CertificatesAdmin />} />
+              <Route
+                path="certificates/:certificateId"
+                element={<DetailCertificateAdmin />}
+              />
               <Route path="results" element={<ResultsAdmin />} />
               <Route path="users" element={<UsersAdmin />} />
+              <Route path="users/add" element={<AddUsersAdmin />} />
+              <Route path="users/:userId" element={<DetailUserAdmin />} />
             </Route>
             <Route path="login" element={<LoginAdmin />} />
           </Route>

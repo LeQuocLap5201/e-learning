@@ -1,6 +1,9 @@
-import { Button, Card, message, Steps } from "antd";
+import { Button, Card, Result, Steps } from "antd";
 import React, { useState } from "react";
 import StepThird from "../FormSteps/StepThird";
+import StepFourth from "../FormSteps/StepFourth";
+import StepFifth from "../FormSteps/StepFifth";
+import { Link } from "react-router-dom";
 
 const { Step } = Steps;
 
@@ -19,17 +22,39 @@ export default function AddEtest() {
     },
     {
       title: "Nội dung câu hỏi",
-      content: "Second-content",
+      content: (
+        <>
+          <StepFourth currentStep={currentStep} nextStep={nextStep} />
+          <StepFifth currentStep={currentStep} nextStep={nextStep} />
+        </>
+      ),
     },
     {
       title: "Hoàn thành",
-      content: "Last-content",
+      content: (
+        <Result
+          status="success"
+          title="Thêm bài học thành công"
+          extra={
+            <>
+              <Link to="/admin/e-tests">
+                <Button>Danh sách bài kiểm tra</Button>
+              </Link>
+              <Button
+                type="primary"
+                className="btn-primary"
+                onClick={() => {
+                  setCurrentStep(0);
+                }}
+              >
+                Thêm bài kiểm tra mới
+              </Button>
+            </>
+          }
+        />
+      ),
     },
   ];
-
-  const prev = () => {
-    setCurrentStep(currentStep - 1);
-  };
 
   return (
     <div className="add-etest">
@@ -41,21 +66,6 @@ export default function AddEtest() {
         </Steps>
         <div className="steps-content" style={{ marginTop: 15 }}>
           {steps[currentStep].content}
-        </div>
-        <div className="steps-action">
-          {currentStep === steps.length - 1 && (
-            <Button
-              type="primary"
-              onClick={() => message.success("Processing complete!")}
-            >
-              Done
-            </Button>
-          )}
-          {currentStep > 0 && (
-            <Button style={{ margin: "0 8px" }} onClick={() => prev()}>
-              Previous
-            </Button>
-          )}
         </div>
       </Card>
     </div>

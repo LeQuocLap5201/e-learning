@@ -52,3 +52,7 @@ code {
 .ant-input-number {
   width: 100%;
 }
+
+.ant-table .ant-table-expanded-row-fixed {
+  margin: 0 -16px;
+}

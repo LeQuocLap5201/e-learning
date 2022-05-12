@@ -4,10 +4,17 @@
 }
 
 .step-first .ant-input-number,
-.step-second .ant-input-number {
+.step-second .ant-input-number,
+.step-third .ant-input-number {
   width: 100%;
 }
 
 .step-second .ant-form-item {
   margin-bottom: 0;
+}
+
+.step-third .ant-form-item-label,
+.step-fourth .ant-form-item-label,
+.step-fifth .ant-form-item-label {
+  text-align: left;
 }

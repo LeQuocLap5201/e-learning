@@ -1,12 +1,12 @@
-.form-detail-study .ant-upload.ant-upload-select-picture-card {
+.form-detail .ant-upload.ant-upload-select-picture-card {
   width: 185px;
   height: 185px;
 }
 
-.form-detail-study .ant-input-number {
+.form-detail .ant-input-number {
   width: 100%;
 }
 
-.form-detail-study .ant-form-item {
+.form-detail .ant-form-item {
   margin-bottom: 0;
 }

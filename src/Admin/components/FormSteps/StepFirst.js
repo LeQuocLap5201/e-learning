@@ -106,12 +106,16 @@ function StepFirst({ currentStep, nextStep }) {
                   name="target"
                   label="Đối tượng học"
                   rules={[
-                    { required: true, message: "Vui lòng chọn đối tượng học" },
+                    {
+                      required: true,
+                      message: "Vui lòng chọn đối tượng học",
+                      type: "array",
+                    },
                   ]}
                 >
                   <Select
                     showSearch
-                    allowClear
+                    mode="multiple"
                     placeholder="Đối tượng học"
                     optionFilterProp="children"
                     filterOption={(input, option) =>
