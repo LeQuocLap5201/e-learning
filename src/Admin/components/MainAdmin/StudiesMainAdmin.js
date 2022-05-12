@@ -32,7 +32,7 @@ const columns = [
     key: "exam_info",
     title: "Tên bài kiểm tra",
     render: (study) => (
-      <Link to={`/admin/e-test/${study?.exam_info?.exam_id}`}>
+      <Link to={`/admin/e-tests/${study?.exam_info?.exam_id}`}>
         {study?.exam_info?.name}
       </Link>
     ),
