@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.20.2",
     "axios": "^0.27.2",
+    "get-youtube-id": "^1.0.1",
     "lodash": "^4.17.21",
     "lodash.debounce": "^4.0.8",
     "lottie-react": "^2.2.1",
@@ -16,9 +17,11 @@
     "query-string": "^7.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-player": "^2.10.1",
     "react-query": "^3.38.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-youtube": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

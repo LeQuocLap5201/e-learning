@@ -253,7 +253,6 @@ export default function TableStepSecond() {
       dataIndex: ["meta", "link"],
       editable: true,
       key: "link",
-
       title: "Link video",
     },
     {

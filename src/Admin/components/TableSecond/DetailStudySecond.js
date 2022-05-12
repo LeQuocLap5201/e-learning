@@ -25,6 +25,7 @@ import {
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { normFile } from "../../support";
+import ReactPlayer from "react-player";
 
 const data = [
   {
@@ -277,6 +278,13 @@ const propsUpload = {
 
 export default function DetailStudySecond() {
   const [form] = Form.useForm();
+
+  // Handle Event Link Video Change
+  const [urlLink, setUrlLink] = useState("");
+
+  const handleLinkChange = (e) => {
+    setUrlLink(e?.target?.value);
+  };
 
   const [editingKey, setEditingKey] = useState("");
 
@@ -583,8 +591,18 @@ export default function DetailStudySecond() {
             </Descriptions.Item>
             <Descriptions.Item label="Link video" span={2}>
               <Form.Item name="link">
-                <Input allowClear placeholder="Link video" />
+                <Input
+                  allowClear
+                  placeholder="Link video"
+                  onChange={handleLinkChange}
+                />
               </Form.Item>
+              {urlLink !== "" ? (
+                <ReactPlayer
+                  url={urlLink}
+                  style={{ width: "100%", marginTop: 15 }}
+                />
+              ) : null}
             </Descriptions.Item>
           </Descriptions>
           <Row style={{ justifyContent: "flex-end", marginTop: 10 }}>

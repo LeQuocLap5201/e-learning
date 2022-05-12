@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import {
   Button,
@@ -14,6 +14,7 @@ import { normFile } from "../../support";
 import { InboxOutlined } from "@ant-design/icons";
 import "./index.css";
 import TableStepSecond from "../TableSecond/TableStepSecond";
+import ReactPlayer from "react-player";
 
 StepSecond.propTypes = {
   currentStep: PropTypes.number,
@@ -27,6 +28,12 @@ StepSecond.defaultProps = {
 
 function StepSecond({ currentStep, nextStep }) {
   const [form] = Form.useForm();
+
+  const [urlLink, setUrlLink] = useState("");
+
+  const handleLinkChange = (e) => {
+    setUrlLink(e?.target?.value);
+  };
 
   return (
     <Card>
@@ -91,8 +98,18 @@ function StepSecond({ currentStep, nextStep }) {
           </Descriptions.Item>
           <Descriptions.Item label="Link video" span={2}>
             <Form.Item name="link">
-              <Input allowClear placeholder="Link video" />
+              <Input
+                allowClear
+                placeholder="Link video"
+                onChange={handleLinkChange}
+              />
             </Form.Item>
+            {urlLink !== "" ? (
+              <ReactPlayer
+                url={urlLink}
+                style={{ width: "100%", marginTop: 15 }}
+              />
+            ) : null}
           </Descriptions.Item>
         </Descriptions>
         <Row style={{ justifyContent: "flex-end", marginTop: 10 }}>
