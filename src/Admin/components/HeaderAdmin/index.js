@@ -11,22 +11,22 @@ import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 
-export default function HeaderAdmin() {
-  const menu = (
-    <Menu>
-      <Menu.Item key="0">
-        <Link to="/admin/users/1">
-          <ContainerOutlined />
-          Thông tin người dùng
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="1">
-        <LogoutOutlined />
-        Đăng xuất
-      </Menu.Item>
-    </Menu>
-  );
+const menu = (
+  <Menu>
+    <Menu.Item key="0">
+      <Link to="/admin/users/1">
+        <ContainerOutlined />
+        Thông tin người dùng
+      </Link>
+    </Menu.Item>
+    <Menu.Item key="1">
+      <LogoutOutlined />
+      Đăng xuất
+    </Menu.Item>
+  </Menu>
+);
 
+export default function HeaderAdmin() {
   return (
     <Header className="header-admin">
       <p className="header-admin__title">ELEARNING CRM</p>

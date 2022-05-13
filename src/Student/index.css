@@ -1,0 +1,110 @@
+.login-student__logo {
+  background-color: #a9dbc1;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-student__logo img {
+  margin: 20px;
+  width: 55px;
+}
+
+.header-student {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #36516d;
+  padding: 0 70px;
+}
+
+.header-student img {
+  width: 45px;
+  aspect-ratio: 1/1;
+  margin-right: 15px;
+}
+
+.header-student__title {
+  min-width: 270px;
+}
+
+.header-student__title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.menu-student {
+  width: 410px;
+  margin-left: auto;
+  background-color: #36516d;
+  border-bottom: none;
+}
+
+.menu-student .ant-menu-item-selected {
+  font-weight: 700;
+}
+
+.menu-student .ant-menu-title-content a {
+  color: #fff;
+}
+
+.menu-student .ant-menu-title-content a:hover {
+  color: #fff;
+}
+
+.main-student {
+  margin-top: 30px;
+}
+
+.introduce-student h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.introduce-student h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.introduce-student h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.introduce-student .content-img {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.introduce-student .content-img.space {
+  justify-content: space-between;
+}
+
+.introduce-student .content-img.center {
+  justify-content: center;
+}
+
+.introduce-student .content-img img {
+  object-fit: contain;
+}
+
+.info-student__card {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 3px #ddd;
+}
+
+.change-pass-student .ant-form-item {
+  margin-bottom: 0;
+}
+
+.change-pass-student h3 {
+  font-size: 20px;
+  font-weight: 700;
+}

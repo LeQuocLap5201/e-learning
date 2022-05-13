@@ -26,6 +26,14 @@ import DetailEtestAdmin from "./Admin/pages/DetailEtestAdmin";
 import DetailCertificateAdmin from "./Admin/pages/DetailCertificateAdmin";
 import AddUsersAdmin from "./Admin/pages/AddUsersAdmin";
 import DetailUserAdmin from "./Admin/pages/DetailUserAdmin";
+import LoginStudent from "./Student/pages/LoginStudent";
+import LayoutStudent from "./Student/pages/LayoutStudent";
+import HomeStudent from "./Student/pages/HomeStudent";
+import IntroduceStudent from "./Student/pages/IntroduceStudent";
+import CoursesStudent from "./Student/pages/CoursesStudent";
+import ResultsStudent from "./Student/pages/ResultsStudent";
+import InfoStudent from "./Student/pages/InfoStudent";
+import ChangePassStudent from "./Student/pages/ChangePassStudent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -34,7 +42,18 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Navigate to={"/student"} />} />
-          <Route path="student" element={<Student />} />
+          <Route path="student" element={<Student />}>
+            <Route path="" element={<LayoutStudent />}>
+              <Route index element={<Navigate to={"home"} />} />
+              <Route path="home" element={<HomeStudent />} />
+              <Route path="introduce" element={<IntroduceStudent />} />
+              <Route path="courses" element={<CoursesStudent />} />
+              <Route path="results" element={<ResultsStudent />} />
+              <Route path="info" element={<InfoStudent />} />
+              <Route path="changePass" element={<ChangePassStudent />} />
+            </Route>
+            <Route path="login" element={<LoginStudent />} />
+          </Route>
           <Route path="admin" element={<Admin />}>
             <Route path="" element={<LayoutAdmin />}>
               <Route index element={<Navigate to={"members"} />} />

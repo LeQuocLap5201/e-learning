@@ -1,0 +1,34 @@
+.login-form-student {
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+.login-form-student__form {
+  justify-content: center;
+}
+
+.login-form-student__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px #ddd;
+}
+
+.login-form-student__card {
+  text-align: left;
+  box-shadow: 0 0 5px 0 rgb(43 43 43 / 10%), 0 11px 6px -7px rgb(43 43 43 / 10%);
+  box-sizing: 5px;
+  margin: 20px 10px;
+}
+
+.login-form-student__card h2 {
+  font-size: 28px;
+}
+.login-form-student__card p {
+  font-size: 14px;
+  color: #808080;
+}
+
+.login-form-student__modal .ant-form-item {
+  margin-bottom: 0;
+}

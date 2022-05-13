@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import "./index.css";
 
 export default function Student() {
-  return (
-    <div>Student</div>
-  )
+  return <Outlet />;
 }

@@ -1,7 +1,6 @@
 import { Layout } from "antd";
 import React from "react";
 import { Outlet } from "react-router-dom";
-// import Footer from "../components/Footer";
 import HeaderAdmin from "../components/HeaderAdmin";
 import MenuAdmin from "../components/MenuAdmin";
 
@@ -19,9 +18,6 @@ export default function LayoutAdmin() {
           <Outlet />
         </div>
       </Content>
-      {/* <div style={{ margin: "25px 0" }}>
-        <Footer />
-      </div> */}
     </Layout>
   );
 }

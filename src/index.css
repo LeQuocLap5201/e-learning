@@ -56,3 +56,8 @@ code {
 .ant-table .ant-table-expanded-row-fixed {
   margin: 0 -16px;
 }
+
+.btn-search .ant-input-search-button {
+  background-color: #36516d;
+  border: #36516d;
+}
