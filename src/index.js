@@ -34,6 +34,10 @@ import CoursesStudent from "./Student/pages/CoursesStudent";
 import ResultsStudent from "./Student/pages/ResultsStudent";
 import InfoStudent from "./Student/pages/InfoStudent";
 import ChangePassStudent from "./Student/pages/ChangePassStudent";
+import DetailCourseStudent from "./Student/pages/DetailCourseStudent";
+import ContentCourseStudent from "./Student/pages/ContentCourseStudent";
+import DetailTestStudent from "./Student/pages/DetailTestStudent";
+import ContentTestStudent from "./Student/pages/ContentTestStudent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -48,10 +52,23 @@ root.render(
               <Route path="home" element={<HomeStudent />} />
               <Route path="introduce" element={<IntroduceStudent />} />
               <Route path="courses" element={<CoursesStudent />} />
+              <Route
+                path="courses/:courseId"
+                element={<DetailCourseStudent />}
+              />
+              <Route
+                path="courses/:courseId/:contentId"
+                element={<ContentCourseStudent />}
+              />
               <Route path="results" element={<ResultsStudent />} />
+              <Route path="test/:testId" element={<DetailTestStudent />} />
               <Route path="info" element={<InfoStudent />} />
               <Route path="changePass" element={<ChangePassStudent />} />
             </Route>
+            <Route
+              path="test/:testId/:contentId"
+              element={<ContentTestStudent />}
+            />
             <Route path="login" element={<LoginStudent />} />
           </Route>
           <Route path="admin" element={<Admin />}>

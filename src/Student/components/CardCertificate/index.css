@@ -1,0 +1,39 @@
+.card-certificate {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 3px #ddd;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.drawer-certificate img,
+.card-certificate img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-certificat__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.card-certificat__content p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.card-certificat__content p.text-gray {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.drawer-certificate__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.drawer-certificate__p {
+  font-size: 14px;
+}

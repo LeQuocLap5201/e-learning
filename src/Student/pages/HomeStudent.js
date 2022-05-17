@@ -1,43 +1,67 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import CardCourse from "../components/CardCourse";
+import FooterStudent from "../components/FooterStudent";
+import { Space } from "antd";
+import { Link } from "react-router-dom";
+import RelatedCourse from "../components/RelatedCourse";
 
 const options = {
-  type: "loop",
-  perPage: 2,
+  // type: "loop",
+  gap: 20,
+  perPage: 3,
   perMove: 1,
   pagination: false,
 };
 
 export default function HomeStudent() {
   return (
-    <div>
-      <Splide options={options} aria-label="React Splide Example 1">
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1586766193036-6d93c6c6c703?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt=""
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1617678151201-2596079f0b30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=754&q=80"
-            alt=""
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1602136773736-34d445b989cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-        </SplideSlide>
-      </Splide>
+    <div
+      style={{
+        minHeight: "calc(100vh - 64px)",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
+      <div className="home-student main-student" style={{ marginBottom: 40 }}>
+        <Space
+          style={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <h3>Tiến độ học của bạn</h3>
+          <Link to="/student/courses">Xem thêm</Link>
+        </Space>
+        <Splide options={options} aria-label="Learning progress">
+          <SplideSlide>
+            <CardCourse />
+          </SplideSlide>
+          <SplideSlide>
+            <CardCourse />
+          </SplideSlide>
+        </Splide>
+        <Space
+          style={{
+            width: "100%",
+            marginTop: 40,
+          }}
+        >
+          <h3>Chuyên đề khác</h3>
+        </Space>
+        <Splide options={options} aria-label="Related Courses">
+          <SplideSlide>
+            <RelatedCourse />
+          </SplideSlide>
+          <SplideSlide>
+            <RelatedCourse />
+          </SplideSlide>
+        </Splide>
+      </div>
+      <FooterStudent />
     </div>
   );
 }

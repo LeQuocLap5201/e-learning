@@ -13,7 +13,6 @@
 
 .header-student {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   background-color: #36516d;
   padding: 0 70px;
@@ -107,4 +106,78 @@
 .change-pass-student h3 {
   font-size: 20px;
   font-weight: 700;
+}
+
+.detail-course__title {
+  margin-bottom: 20px;
+}
+
+.detail-course__title span {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.detail-course__left img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.detail-course__right p:first-child {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.rpv-core__viewer {
+  height: 750px !important;
+  margin-bottom: 40px;
+}
+
+.detail-course .ant-tree-switcher-noop {
+  display: none;
+}
+
+.detail-course .ant-tree .ant-tree-node-content-wrapper {
+  border-radius: 20px;
+}
+
+.detail-course__item {
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.detail-course__item.active {
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 100%
+  );
+}
+
+.detail-course__item.active span {
+  color: #fff !important;
+}
+
+.detail-test__content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail-test__content .ant-alert {
+  margin-bottom: 20px;
+}
+
+.content-test-student {
+  min-height: 100vh;
+  padding: 20px 70px 0;
+}
+
+.content-test-student h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
 }

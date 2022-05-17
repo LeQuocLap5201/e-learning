@@ -1,0 +1,108 @@
+.card-course {
+  border-radius: 20px;
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.card-course .ant-card-body {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-course img {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-right: 20px;
+}
+
+.card-course__content {
+  width: 70%;
+}
+
+.card-course__content h4,
+.card-course__content p {
+  color: #fff;
+}
+
+.card-course__content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-course__content p {
+  margin-bottom: 5px;
+}
+
+.card-course__content p.position {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card-course__tag {
+  margin-bottom: 10px;
+}
+
+.card-course__tag .course-tag:last-child {
+  margin-right: 0;
+}
+
+.course-tag {
+  display: inline-block;
+  background-color: #fff;
+  min-width: 80px;
+  border-radius: 15px;
+  padding: 2px 15px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 700;
+  color: #8abcdd;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.course-progress {
+  margin-bottom: 15px;
+}
+
+.course-progress .ant-progress-inner {
+  border: 2px solid #fff;
+}
+
+.course-progress .ant-progress-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.course-listbtn button {
+  margin-right: 15px;
+}
+
+.course-listbtn button:last-child {
+  margin-right: 0;
+}
+
+.course-listbtn button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transform: 0.5s;
+}
+
+.course-listbtn button:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #8abcdd;
+}

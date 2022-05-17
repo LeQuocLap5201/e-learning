@@ -1505,6 +1505,146 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@react-pdf-viewer/attachment@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/attachment/-/attachment-3.3.2.tgz#2abefad441bf36a6d95c062a2e0176daa56ede23"
+  integrity sha512-j6tfRhc083B8nD/mbxl4No1DvJoVq0KEEPKrDUEy2/WELjD+jCsvyoJII26NPaQhYQbkpfyRgm0H4/nDC8Fj1g==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/bookmark@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/bookmark/-/bookmark-3.3.2.tgz#ea3f90bdf569b7809d2eac158d660c12dfa85eb3"
+  integrity sha512-IZZY5707w/PCw07v/xtvML8S6MFU5oiyW7GFzWfaLbSkQVklbmFKx6jmjCGpR3mTKADKVFebMJSEeJUuyeIyBA==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/core@3.3.2", "@react-pdf-viewer/core@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/core/-/core-3.3.2.tgz#56749264c3f8f5d3fa4b9c8560b52f8143b84d13"
+  integrity sha512-hRbYCKP6m5KzH9EKf0HKYgK6v0GUM9h5dnF9XX009u/BvK2GLzarQHu+gJwN4KvtJK4ajfphxhKeZN4DnWoFYQ==
+
+"@react-pdf-viewer/default-layout@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/default-layout/-/default-layout-3.3.2.tgz#c0bc356baa1dd1377aadc3d186f674cd93846a3d"
+  integrity sha512-SjRmsUV73VGnBilGH9svteBdaUGkk3keI1is7xYOaTdf99IRPnZU52MrpV2kf+Dog+mrnIE1vWJerYoIT4rE/g==
+  dependencies:
+    "@react-pdf-viewer/attachment" "3.3.2"
+    "@react-pdf-viewer/bookmark" "3.3.2"
+    "@react-pdf-viewer/core" "3.3.2"
+    "@react-pdf-viewer/thumbnail" "3.3.2"
+    "@react-pdf-viewer/toolbar" "3.3.2"
+
+"@react-pdf-viewer/full-screen@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/full-screen/-/full-screen-3.3.2.tgz#81e36d5dd046da0c2ceabc9fa7f52b35d080187d"
+  integrity sha512-W90uQGbravgue7+y4yroxZHnBHC6++K5xyFinU0dPRH3DX2lkJsB6+dXjK/lMLwI7m38TcA8h4MyuMZBYrAl5Q==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/get-file@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/get-file/-/get-file-3.3.2.tgz#7001b92d7ad015944beece5e0533bf7392cdf23b"
+  integrity sha512-MQESlHT4GzJTCuMK6KHn+5RzvuAYVVYhRhjpg/kCEbJRtqqAm9uiC35eRaiTFEPKUKmscEt+U9u8xaKV4mM0lA==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/open@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/open/-/open-3.3.2.tgz#0937a7452bad065e7c208ae7743de51fdad7c854"
+  integrity sha512-1m651bkzfULOK4N6tJni1EyHolR5pq8OM53x+UPooC2d29yiGhtMiHOidWlayg8KKg1XTKLGc+Q1vIsVxt6S0A==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/page-navigation@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/page-navigation/-/page-navigation-3.3.2.tgz#59ee92eb8d81695b75696225a73ede3680dcef52"
+  integrity sha512-GZzpC6zKeHPG+Nph6DREsPXZ1wByomtbC0fFU4MXJtifDfv0LUh2faYJytvJQ3UfNxY429JlMCnk3WhWBABd1A==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/print@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/print/-/print-3.3.2.tgz#9d8826e91c6ea4749aeca3e6be0dcda4498780c6"
+  integrity sha512-nCrLKkpMatyuTUx6ihPn5s2cQghCs2tWxP/sRGMGTJdHDcaGQlUkJFE9oejRz6lTSm+HQ9TdwtbXX+WT6NouTA==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/properties@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/properties/-/properties-3.3.2.tgz#a3607903e8abca17c413c46b8e1d9b8a85003bdb"
+  integrity sha512-x9h4mJ0XlADQo9HU/dldIhI5h1tiQgdlqHmZ8K+LXRiwSrSDex/LjuTJzKlzkopQ47puP7XLVUdOZShzPf7seQ==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/rotate@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/rotate/-/rotate-3.3.2.tgz#5b13d4f3b7acf746ff65e63f2b31097c826b79af"
+  integrity sha512-pfZyhuvlixTerE25R5zfSDZ7h+kARx+hoEQrd/PrxJxz4um9K7bPQ6TXIKEMVn4v+IMfbinJ01cZnxGRbbNcgA==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/scroll-mode@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/scroll-mode/-/scroll-mode-3.3.2.tgz#1a2470e954cb2e60090da6b3f428f0a1fd2433e6"
+  integrity sha512-v7w0BNO+tLuqNI5xNRDT3QFTAbKWRkWD15JzrMQwuJSXWAqSF5HKfQ8b/yFUkxat/MXJ9FERy1BycWH9q7CZpw==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/search@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/search/-/search-3.3.2.tgz#e2efafb99da572825487dff33e6f5c24d5c74118"
+  integrity sha512-/JkPwUPddnMuGgqohVV82xxys2XpB52DhE5jpJgBkek+UokyjRZkN5wswIe6DsGCCH59WrfnRymR3BMQ9khMgg==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/selection-mode@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/selection-mode/-/selection-mode-3.3.2.tgz#a2f43cc004812290017c236f75a8c17500372bbc"
+  integrity sha512-YVrHuJjJqddAXy1k3CyiNXQtL/5mV/yiQVzZL7ELhWQ2We4msGAsQMXE+vSCYP52JRvhJo0GW+wpeqqzsfLbAw==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/theme@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/theme/-/theme-3.3.2.tgz#94152a03bf7109868cebfb9af142c01b1e62d05f"
+  integrity sha512-7DBIIW8qM1UP/OlC1dnHeb0JqCG1SEC5ll8cXNdvwEr75nw44p1qap4eLlkbFLqOBGxJeswXUoL6vwglJPAXmQ==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/thumbnail@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/thumbnail/-/thumbnail-3.3.2.tgz#4df3c1c4814303692b8ce758ecafe29c50bf4cc4"
+  integrity sha512-O7hAa87WZHVuapEiO5YBh6sjU+wd+IzjORKtQ0lR8n6rwHefMggZO+hYFKCcRghG4Nty+HmSY1VzikMjTmtoAQ==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
+"@react-pdf-viewer/toolbar@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/toolbar/-/toolbar-3.3.2.tgz#39999969c54e77ae7a7ad7448cc1adde86c50701"
+  integrity sha512-FODrs+K9BEx0k/PsrSyuI/qy4ZFZLvA9zeBYC4mCMdQx4Uhd0D4DaRkdYvipSLPlHRnFNjp+UjvTWO5ikbkYnQ==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+    "@react-pdf-viewer/full-screen" "3.3.2"
+    "@react-pdf-viewer/get-file" "3.3.2"
+    "@react-pdf-viewer/open" "3.3.2"
+    "@react-pdf-viewer/page-navigation" "3.3.2"
+    "@react-pdf-viewer/print" "3.3.2"
+    "@react-pdf-viewer/properties" "3.3.2"
+    "@react-pdf-viewer/rotate" "3.3.2"
+    "@react-pdf-viewer/scroll-mode" "3.3.2"
+    "@react-pdf-viewer/search" "3.3.2"
+    "@react-pdf-viewer/selection-mode" "3.3.2"
+    "@react-pdf-viewer/theme" "3.3.2"
+    "@react-pdf-viewer/zoom" "3.3.2"
+
+"@react-pdf-viewer/zoom@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@react-pdf-viewer/zoom/-/zoom-3.3.2.tgz#cd3350bd5e7af1b8536e780aab1cf125ab23f41c"
+  integrity sha512-F50K40lfh9NIsFdz/uTU6NXwGjlztIyUBiYjxcxyIBBkKh8jTCDU1A/0NfIcgcVd1UqiSKM4+bl7wYVRwEXfZQ==
+  dependencies:
+    "@react-pdf-viewer/core" "3.3.2"
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -3084,6 +3224,11 @@ cliui@^7.0.2:
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
 
+clsx@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+  integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
@@ -3537,7 +3682,7 @@ dayjs@1.x:
   resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.11.1.tgz"
   integrity sha512-ER7EjqVAMkRRsxNCC5YqJ9d9VQYuWdGt7aiH2qA5R5wt8ZmWaP2dLUSIK6y/kVzLMlmh1Tvu5xUf4M/wdGJ5KA==
 
-debug@2.6.9, debug@^2.6.0, debug@^2.6.6, debug@^2.6.9:
+debug@2.6.9, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -4294,7 +4439,7 @@ express@^4.17.3:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-fast-deep-equal@3.1.3, fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
@@ -4597,11 +4742,6 @@ get-symbol-description@^1.0.0:
   dependencies:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
-
-get-youtube-id@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/get-youtube-id/-/get-youtube-id-1.0.1.tgz#adb6f475e292d98f98ed5bfb530887656193e157"
-  integrity sha512-5yidLzoLXbtw82a/Wb7LrajkGn29BM6JuLWeHyNfzOGp1weGyW4+7eMz6cP23+etqj27VlOFtq8fFFDMLq/FXQ==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
@@ -6597,6 +6737,13 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pdfjs-dist@2.13.216:
+  version "2.13.216"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.13.216.tgz#251a11c9c8c6db19baacd833a4e6986c517d1ab3"
+  integrity sha512-qn/9a/3IHIKZarTK6ajeeFXBkG15Lg1Fx99PxU09PAU2i874X8mTcHJYyDJxu7WDfNhV6hM7bRQBZU384anoqQ==
+  dependencies:
+    web-streams-polyfill "^3.2.0"
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
@@ -7240,7 +7387,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.8.1, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7745,6 +7892,14 @@ react-dom@^18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
+react-draggable@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-4.4.5.tgz#9e37fe7ce1a4cf843030f521a0a4cc41886d7e7c"
+  integrity sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==
+  dependencies:
+    clsx "^1.1.1"
+    prop-types "^15.8.1"
+
 react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
@@ -7864,15 +8019,6 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
-
-react-youtube@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-9.0.1.tgz#d69b310a70b1caf661b5f5e6aea392456ef8d658"
-  integrity sha512-w2yt3o1H0fjlMjoqn8zEmtCqgiV+bYS1JfMSUfh70zky2rwWVORQzpt2DWoDio1+nZ1X9kSTzakdif6gaJdFuQ==
-  dependencies:
-    fast-deep-equal "3.1.3"
-    prop-types "15.8.1"
-    youtube-player "5.5.2"
 
 react@^18.1.0:
   version "18.1.0"
@@ -8345,11 +8491,6 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
-
-sister@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/sister/-/sister-3.0.2.tgz#bb3e39f07b1f75bbe1945f29a27ff1e5a2f26be4"
-  integrity sha512-p19rtTs+NksBRKW9qn0UhZ8/TUI9BPw9lmtHny+Y3TinWlOa9jWh9xB0AtPSdmOy49NJJJSSe0Ey4C7h0TrcYA==
 
 sisteransi@^1.0.5:
   version "1.0.5"
@@ -9123,6 +9264,11 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+web-streams-polyfill@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
+  integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
+
 web-vitals@^2.1.4:
   version "2.1.4"
   resolved "https://registry.npmjs.org/web-vitals/-/web-vitals-2.1.4.tgz"
@@ -9582,12 +9728,3 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-youtube-player@5.5.2:
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/youtube-player/-/youtube-player-5.5.2.tgz#052b86b1eabe21ff331095ffffeae285fa7f7cb5"
-  integrity sha512-ZGtsemSpXnDky2AUYWgxjaopgB+shFHgXVpiJFeNB5nWEugpW1KWYDaHKuLqh2b67r24GtP6HoSW5swvf0fFIQ==
-  dependencies:
-    debug "^2.6.6"
-    load-script "^1.0.0"
-    sister "^3.0.0"

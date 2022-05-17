@@ -1,0 +1,12 @@
+.test-question,
+.test-question__title {
+  width: 100%;
+}
+
+.test-question {
+  margin-bottom: 30px;
+}
+
+.test-question__title {
+  margin-bottom: 10px;
+}

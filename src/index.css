@@ -27,7 +27,8 @@ code {
   transition: 0.5s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #37587b;
   border-color: #37587b;
 }
@@ -60,4 +61,39 @@ code {
 .btn-search .ant-input-search-button {
   background-color: #36516d;
   border: #36516d;
+}
+
+.ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
+
+.text-gray {
+  color: #888;
+}
+
+.splide__arrow {
+  background: #fff !important;
+  opacity: 1 !important;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%) !important;
+}
+
+.splide__arrow--prev {
+  left: 0 !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.splide__arrow--next {
+  right: 0 !important;
+  transform: translate(50%, -50%) !important;
+}
+
+.btn-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 600;
 }

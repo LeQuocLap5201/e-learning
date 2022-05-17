@@ -1,0 +1,49 @@
+.related-course {
+  border-radius: 20px;
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.related-course .ant-card-body {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.related-course img {
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-right: 20px;
+}
+
+.related-course__content {
+  width: 80%;
+}
+
+.related-course__content h4,
+.related-course__content p {
+  color: #fff;
+}
+
+.related-course__content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.related-course__content p {
+  margin-bottom: 5px;
+}
+
+.related-course__content p.position {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

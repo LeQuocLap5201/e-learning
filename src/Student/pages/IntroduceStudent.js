@@ -44,7 +44,7 @@ export default function IntroduceStudent() {
         </div>
         <div>
           <h3>Hướng dẫn học trực tuyến</h3>
-          <h4>WEBSITE HỌC & THI TRỰC TUYẾN</h4>
+          <h4>WEBSITE HỌC {"&"} THI TRỰC TUYẾN</h4>
           <h5>Đăng ký</h5>
           <p>• Nhấn “Đăng ký” trên trang đăng nhập để đăng ký thành viên.</p>
           <p>
@@ -52,36 +52,38 @@ export default function IntroduceStudent() {
             khoản mới → Hệ thống sẽ hiện pop up “Bạn đã đăng ký thành công”.
           </p>
           <div className="content-img space">
-            <img src="../img/1.png" style={{ width: "30%" }} alt="" />
-            <img src="../img/arrow.png" style={{ width: "10%" }} alt="" />
-            <img src="../img/2.png" style={{ width: "60%" }} alt="" />
+            <img src="/img/1.png" style={{ width: "30%" }} alt="" />
+            <img src="/img/arrow.png" style={{ width: "10%" }} alt="" />
+            <img src="/img/2.png" style={{ width: "60%" }} alt="" />
           </div>
         </div>
         <p>• Nhấn “Đồng ý” để đổi mật khẩu.</p>
         <p>
-          • Nhập mật khẩu mới và nhấn “Đổi mật khẩu” -> Tài khoản được đăng nhập
-          và chuyển sang trang chủ Web học.
+          • Nhập mật khẩu mới và nhấn “Đổi mật khẩu” {"->"} Tài khoản được đăng
+          nhập và chuyển sang trang chủ Web học.
         </p>
         <div className="content-img space">
-          <img src="../img/3.png" style={{ width: "50%" }} alt="" />
-          <img src="../img/4.png" style={{ width: "45%" }} alt="" />
+          <img src="/img/3.png" style={{ width: "50%" }} alt="" />
+          <img src="/img/4.png" style={{ width: "45%" }} alt="" />
         </div>
         <h5>Đăng nhập</h5>
         <p>
           • Nhập số điện thoại đã đăng ký và mật khẩu để đăng nhập vào web học.
         </p>
         <div className="content-img center">
-          <img src="../img/5.png" style={{ width: "25%" }} alt="" />
+          <img src="/img/5.png" style={{ width: "25%" }} alt="" />
         </div>
         <h5>Mục đích</h5>
         <p>
-          • Cho phép thành viên tham gia vào Chương trình Học & Thi trực tuyến
-          để:
+          • Cho phép thành viên tham gia vào Chương trình Học {"&"} Thi trực
+          tuyến để:
         </p>
         <ul>
           <li>Học trực tuyến.</li>
           <li>Thi trực tuyến.</li>
-          <li>Nhận Certificate chứng nhận theo Chương học & Chuyên đề học.</li>
+          <li>
+            Nhận Certificate chứng nhận theo Chương học {"&"} Chuyên đề học.
+          </li>
         </ul>
         <h5>Giao diện tính năng E-learning bao gồm 2 Mục thông tin chính:</h5>
         <p>
@@ -97,7 +99,7 @@ export default function IntroduceStudent() {
           nhiều Bài học hơn.
         </p>
         <div className="content-img center">
-          <img src="../img/6.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/6.png" style={{ width: "80%" }} alt="" />
         </div>
         <h5>Giới thiệu</h5>
         <p>• Giới thiệu: Thông tin chung về bệnh viện Chợ Rẫy.</p>
@@ -106,7 +108,7 @@ export default function IntroduceStudent() {
           thi trực tuyến tại đây.
         </p>
         <div className="content-img center">
-          <img src="../img/7.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/7.png" style={{ width: "80%" }} alt="" />
         </div>
         <h5>Tiến độ học của bạn</h5>
         <p>
@@ -114,37 +116,37 @@ export default function IntroduceStudent() {
           đó. Thành viên scroll để xem nhiều hơn.
         </p>
         <div className="content-img center">
-          <img src="../img/8.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/8.png" style={{ width: "80%" }} alt="" />
         </div>
         <p>• Icon hiển thị ở các chương và chuyên đề</p>
         <ul style={{ listStyle: "none" }}>
           <li style={{ marginBottom: 5 }}>
             <FileDoneOutlined style={{ fontSize: 20 }} />{" "}
             <EditOutlined style={{ fontSize: 20 }} />
-            Chưa học – Chưa thi.
+            Chưa học {"-"} Chưa thi.
           </li>
           <li style={{ marginBottom: 5 }}>
             <FileSearchOutlined style={{ fontSize: 20, color: "#007EFF" }} />{" "}
-            <EditOutlined style={{ fontSize: 20 }} /> Đang học – Chưa thi.
+            <EditOutlined style={{ fontSize: 20 }} /> Đang học {"-"} Chưa thi.
           </li>
           <li style={{ marginBottom: 5 }}>
             <FileDoneOutlined style={{ fontSize: 20, color: "#00D300" }} />{" "}
-            <EditOutlined style={{ fontSize: 20 }} /> Học xong – Chưa thi.
+            <EditOutlined style={{ fontSize: 20 }} /> Học xong {"-"} Chưa thi.
           </li>
           <li style={{ marginBottom: 5 }}>
             <FileDoneOutlined style={{ fontSize: 20, color: "#00D300" }} />{" "}
-            <CrownOutlined style={{ fontSize: 20 }} /> Học xong – Thi fail.
+            <CrownOutlined style={{ fontSize: 20 }} /> Học xong {"-"} Thi fail.
           </li>
           <li style={{ marginBottom: 5 }}>
             <FileDoneOutlined style={{ fontSize: 20, color: "#00D300" }} />{" "}
             <CrownOutlined style={{ fontSize: 20, color: "#00D300" }} /> Học
-            xong – Thi pass.
+            xong {"-"} Thi pass.
           </li>
         </ul>
         <div className="content-img space">
-          <img src="../img/9.png" style={{ width: "30%" }} alt="" />
-          <img src="../img/10.png" style={{ width: "30%" }} alt="" />
-          <img src="../img/11.png" style={{ width: "30%" }} alt="" />
+          <img src="/img/9.png" style={{ width: "30%" }} alt="" />
+          <img src="/img/10.png" style={{ width: "30%" }} alt="" />
+          <img src="/img/11.png" style={{ width: "30%" }} alt="" />
         </div>
         <p>Tại trang Chi tiết bài học, thành viên xem thông tin bao gồm:</p>
         <ul>
@@ -166,7 +168,7 @@ export default function IntroduceStudent() {
           </li>
         </ul>
         <div className="content-img center">
-          <img src="../img/12.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/12.png" style={{ width: "80%" }} alt="" />
         </div>
         <p>
           • Sau khi nhấn vào Chương học, thành viên nhấn nút “Bắt đầu học” để
@@ -177,23 +179,23 @@ export default function IntroduceStudent() {
           Zoom in/out theo thanh công cụ.
         </p>
         <div className="content-img center">
-          <img src="../img/13.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/13.png" style={{ width: "80%" }} alt="" />
         </div>
         <p>
           • Sau khi học xong, thành viên nhấn vào nút Hoàn thành Chương để kết
           thúc bài học.
         </p>
-        <p>• Sau khi Hoàn thành bài học => Thành viên nhấn nút:</p>
+        <p>• Sau khi Hoàn thành bài học {"=>"} Thành viên nhấn nút:</p>
         <ul>
           <li>
             <b>“Làm bài thi”</b> để tiến hành Thi trực tuyến.
           </li>
           <li>
-            <b>“Trang chủ”</b> để trở về trang chủ Học & Thi.
+            <b>“Trang chủ”</b> để trở về trang chủ Học {"&"} Thi.
           </li>
         </ul>
         <div className="content-img center">
-          <img src="../img/14.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/14.png" style={{ width: "80%" }} alt="" />
         </div>
         <p>
           • Sau khi nhấn nút “Làm bài thi”, hệ thống hiển thị Thông tin bài kiểm
@@ -211,7 +213,7 @@ export default function IntroduceStudent() {
           theo hình thức trắc nghiệm.
         </p>
         <p>
-          • Sau khi hoàn thành bài kiểm tra => thành viên nhấn nút{" "}
+          • Sau khi hoàn thành bài kiểm tra {"=>"} thành viên nhấn nút{" "}
           <b>“Gửi kết quả”</b>={">"} Hệ thống Pop-up thông báo thành viên Pass
           và Fail Bài kiểm tra ngay sau đó
         </p>
@@ -221,13 +223,13 @@ export default function IntroduceStudent() {
           quả.
         </p>
         <div className="content-img center">
-          <img src="../img/15.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/15.png" style={{ width: "80%" }} alt="" />
         </div>
         <ol>
           <li>
             <p>
-              Trường hợp Pass , hệ thống thông báo: => Chúc mừng bạn đã vượt qua
-              bài thi. → Thành viên nhấn nút:
+              Trường hợp Pass , hệ thống thông báo: {"=>"} Chúc mừng bạn đã vượt
+              qua bài thi. → Thành viên nhấn nút:
             </p>
             <ul>
               <li>
@@ -256,7 +258,7 @@ export default function IntroduceStudent() {
               </li>
             </ul>
             <div className="content-img center">
-              <img src="../img/16.png" style={{ width: "80%" }} alt="" />
+              <img src="/img/16.png" style={{ width: "80%" }} alt="" />
             </div>
           </li>
           <li>
@@ -288,7 +290,7 @@ export default function IntroduceStudent() {
               quả làm bài thi (Pass/Fail)
             </p>
             <div className="content-img center">
-              <img src="../img/17.png" style={{ width: "80%" }} alt="" />
+              <img src="/img/17.png" style={{ width: "80%" }} alt="" />
             </div>
           </li>
         </ol>
@@ -319,12 +321,12 @@ export default function IntroduceStudent() {
         </p>
         <p>• Cách làm bài Thi chuyên đề tương tự như làm bài thi chương.</p>
         <div className="content-img center">
-          <img src="../img/18.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/18.png" style={{ width: "80%" }} alt="" />
         </div>
         <h5>Kết quả</h5>
         <p>
-          • Sau khi Hoàn thành bài kiểm tra => thành viên đạt được Certificate
-          tương đương (Certificate cho chương và chuyên đề).
+          • Sau khi Hoàn thành bài kiểm tra {"=>"} thành viên đạt được
+          Certificate tương đương (Certificate cho chương và chuyên đề).
         </p>
         <p>
           • Thành viên vào mục “Kết quả” trên thanh công cụ để xem kết quả học
@@ -345,7 +347,7 @@ export default function IntroduceStudent() {
               lần thi.
             </p>
             <div className="content-img center">
-              <img src="../img/19.png" style={{ width: "80%" }} alt="" />
+              <img src="/img/19.png" style={{ width: "80%" }} alt="" />
             </div>
           </li>
           <li>
@@ -364,13 +366,13 @@ export default function IntroduceStudent() {
               nhất 1 chương cũng được liệt kê vào danh sách này).
             </p>
             <div className="content-img center">
-              <img src="../img/20.png" style={{ width: "80%" }} alt="" />
+              <img src="/img/20.png" style={{ width: "80%" }} alt="" />
             </div>
           </li>
         </ol>
         <p>
           ▪ Chuyên đề đã hoàn thành thì hệ thống sẽ hiển thị mục{" "}
-          <b>“Xem kết quả”</b> – nhấn vào nút này, thành viên sẽ xem được
+          <b>“Xem kết quả”</b> {"-"} nhấn vào nút này, thành viên sẽ xem được
           certificate chuyên đề.
         </p>
         <p>
@@ -379,7 +381,7 @@ export default function IntroduceStudent() {
           nhấn vào <b>“Xem kết quả”</b>)
         </p>
         <div className="content-img center">
-          <img src="../img/21.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/21.png" style={{ width: "80%" }} alt="" />
         </div>
         <h5>Thông tin cá nhân</h5>
         <p>
@@ -399,17 +401,17 @@ export default function IntroduceStudent() {
           <li>Ngày kích hoạt.</li>
         </ul>
         <div className="content-img center">
-          <img src="../img/22.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/22.png" style={{ width: "80%" }} alt="" />
         </div>
-        <h5>Tìm kiếm – Tìm kiếm theo Tên chuyên đề</h5>
+        <h5>Tìm kiếm {"-"} Tìm kiếm theo Tên chuyên đề</h5>
         <p>
           Mục đích: Cho phép thành viên tìm kiếm nhanh Tên chuyên đề muốn học.
           Thành viên nhấn vào Biểu tượng tìm kiếm trên thanh header và nhập Tên
-          chuyên đề mình muốn tìm kiếm. => Hệ thống hiển thị danh sách Chuyên đề
-          liên quan.
+          chuyên đề mình muốn tìm kiếm. {"=>"} Hệ thống hiển thị danh sách
+          Chuyên đề liên quan.
         </p>
         <div className="content-img center">
-          <img src="../img/23.png" style={{ width: "80%" }} alt="" />
+          <img src="/img/23.png" style={{ width: "80%" }} alt="" />
         </div>
       </div>
       <FooterStudent />

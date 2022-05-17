@@ -155,7 +155,7 @@ export default function LayoutStudent() {
         >
           <Header className="header-student">
             <Link to="/student">
-              <img src="../img/iconChoRay.png" alt="logo" />
+              <img src="/img/iconChoRay.png" alt="logo" />
             </Link>
             <div className="header-student__title">
               <h2>HỆ THỐNG HỌC & THI TRỰC TUYẾN</h2>
@@ -236,7 +236,7 @@ export default function LayoutStudent() {
             <List.Item>
               <Link to={`/student/courses/${item?.id}`}>
                 <img
-                  src="../img/default.jpg"
+                  src="/img/default.jpg"
                   alt="thumbnail"
                   style={{ width: 80, marginRight: 20 }}
                 />{" "}
