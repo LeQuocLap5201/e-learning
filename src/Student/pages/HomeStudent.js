@@ -8,11 +8,30 @@ import { Link } from "react-router-dom";
 import RelatedCourse from "../components/RelatedCourse";
 
 const options = {
-  // type: "loop",
+  gap: 20,
+  perPage: 2,
+  perMove: 1,
+  pagination: false,
+  breakpoints: {
+    850: {
+      perPage: 1,
+    },
+  },
+};
+
+const options2 = {
   gap: 20,
   perPage: 3,
   perMove: 1,
   pagination: false,
+  breakpoints: {
+    1200: {
+      perPage: 2,
+    },
+    700: {
+      perPage: 1,
+    },
+  },
 };
 
 export default function HomeStudent() {
@@ -43,6 +62,12 @@ export default function HomeStudent() {
           <SplideSlide>
             <CardCourse />
           </SplideSlide>
+          <SplideSlide>
+            <CardCourse />
+          </SplideSlide>
+          <SplideSlide>
+            <CardCourse />
+          </SplideSlide>
         </Splide>
         <Space
           style={{
@@ -52,7 +77,13 @@ export default function HomeStudent() {
         >
           <h3>Chuyên đề khác</h3>
         </Space>
-        <Splide options={options} aria-label="Related Courses">
+        <Splide options={options2} aria-label="Related Courses">
+          <SplideSlide>
+            <RelatedCourse />
+          </SplideSlide>
+          <SplideSlide>
+            <RelatedCourse />
+          </SplideSlide>
           <SplideSlide>
             <RelatedCourse />
           </SplideSlide>

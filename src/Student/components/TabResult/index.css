@@ -2,3 +2,9 @@
   font-size: 16px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 400px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}

@@ -31,14 +31,18 @@ export default function DetailTestStudent() {
           />
           <h3>1412 Test</h3>
           <Row gutter={[16, 10]}>
-            <Col span={8}>
+            <Col xs={12} sm={4}>
               <b>Số câu hỏi</b>
             </Col>
-            <Col span={16}>5</Col>
-            <Col span={8}>
+            <Col xs={12} sm={20}>
+              5
+            </Col>
+            <Col xs={12} sm={4}>
               <b>Thời gian thi</b>
             </Col>
-            <Col span={16}>10</Col>
+            <Col xs={12} sm={20}>
+              10 phút
+            </Col>
           </Row>
         </div>
       </div>

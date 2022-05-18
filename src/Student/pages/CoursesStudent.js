@@ -22,31 +22,31 @@ export default function CoursesStudent() {
           <ButtonBack />
         </div>
         <Row gutter={[20, 20]}>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
-          <Col span={6}>
+          <Col xxl={6} lg={8} md={12}>
             <CardCourse />
           </Col>
         </Row>

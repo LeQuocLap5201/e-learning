@@ -4,6 +4,7 @@ import {
   CrownOutlined,
   EditOutlined,
   FileSearchOutlined,
+  HomeOutlined,
   MenuUnfoldOutlined,
   SearchOutlined,
   UserOutlined,
@@ -20,7 +21,8 @@ import {
 } from "antd";
 import { Header } from "antd/lib/layout/layout";
 import React, { useEffect, useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import useViewport from "../../hooks/useViewport";
 
 const { Content } = Layout;
 
@@ -134,6 +136,8 @@ const menu = (
 );
 
 export default function LayoutStudent() {
+  const viewPort = useViewport();
+
   const location = useLocation();
   const [current, setCurrent] = useState(location.pathname);
 
@@ -154,6 +158,9 @@ export default function LayoutStudent() {
           }}
         >
           <Header className="header-student">
+            <div className="logo-mobile">
+              <img src="/img/iconMediad.png" alt="" />
+            </div>
             <Link to="/student">
               <img src="/img/iconChoRay.png" alt="logo" />
             </Link>
@@ -182,6 +189,7 @@ export default function LayoutStudent() {
             <Button
               type="link"
               icon={<SearchOutlined style={{ color: "#fff", fontSize: 20 }} />}
+              className="header-student__btn"
               onClick={() => {
                 setIsModalSearch(true);
               }}
@@ -204,8 +212,42 @@ export default function LayoutStudent() {
               </a>
             </Dropdown>
           </Header>
+          {viewPort <= 720 && (
+            <div className="nav-mobile">
+              <ul className="menu-mobile">
+                <li>
+                  <NavLink to="home">
+                    <HomeOutlined />
+                    Trang chủ
+                  </NavLink>
+                </li>
+                <li>
+                  <a
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsModalSearch(true);
+                    }}
+                  >
+                    <SearchOutlined />
+                    Tìm kiếm
+                  </a>
+                </li>
+                <li>
+                  <NavLink to="results">
+                    <CrownOutlined />
+                    Kết quả
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
-        <Content style={{ padding: "0 70px", minHeight: "calc(100vh - 64px)", backgroundColor: '#fff' }}>
+        <Content
+          style={{
+            minHeight: "calc(100vh - 64px)",
+            backgroundColor: "#fff",
+          }}
+        >
           <div className="site-layout-content">
             <Outlet />
           </div>
@@ -234,7 +276,11 @@ export default function LayoutStudent() {
           dataSource={data}
           renderItem={(item) => (
             <List.Item>
-              <Link to={`/student/courses/${item?.id}`}>
+              <Link
+                to={`/student/courses/${item?.id}`}
+                style={{ display: "flex", alignItems: "center" }}
+                onClick={() => setIsModalSearch(false)}
+              >
                 <img
                   src="/img/default.jpg"
                   alt="thumbnail"

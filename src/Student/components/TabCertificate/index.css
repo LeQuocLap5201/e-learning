@@ -5,3 +5,9 @@
   box-shadow: 3px 3px 3px #ddd;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 900px) {
+  .tab-certificate__card {
+    width: 100%;
+  }
+}

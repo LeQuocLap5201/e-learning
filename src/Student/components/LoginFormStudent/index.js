@@ -13,9 +13,12 @@ import {
   Space,
 } from "antd";
 import React, { useState } from "react";
+import useViewport from "../../../hooks/useViewport";
 import "./index.css";
 
 export default function LoginFormStudent() {
+  const viewPort = useViewport();
+
   const [form] = Form.useForm();
   const [isForget, setIsForget] = useState(false);
   const [isRegistration, setIsRegistration] = useState(false);
@@ -67,7 +70,13 @@ export default function LoginFormStudent() {
                   Đăng nhập
                 </Button>
               </Form.Item>
-              <Space style={{ width: "100%", justifyContent: "space-between" }}>
+              <Space
+                style={{
+                  width: "100%",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                }}
+              >
                 <Button
                   type="link"
                   onClick={() => {
@@ -104,7 +113,11 @@ export default function LoginFormStudent() {
         footer={null}
       >
         <Form form={form}>
-          <Descriptions bordered column={1}>
+          <Descriptions
+            bordered
+            column={1}
+            layout={viewPort <= 576 ? "vertical" : "horizontal"}
+          >
             <Descriptions.Item
               label={
                 <>
@@ -236,7 +249,11 @@ export default function LoginFormStudent() {
         footer={null}
       >
         <Form>
-          <Descriptions column={1} bordered>
+          <Descriptions
+            column={1}
+            bordered
+            layout={viewPort <= 576 ? "vertical" : "horizontal"}
+          >
             <Descriptions.Item
               label={
                 <>

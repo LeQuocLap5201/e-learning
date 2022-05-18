@@ -1,8 +1,11 @@
 import { Button, Descriptions, Form, Input, Space } from "antd";
 import React from "react";
+import useViewport from "../../hooks/useViewport";
 import FooterStudent from "../components/FooterStudent";
 
 export default function ChangePassStudent() {
+  const viewPort = useViewport();
+
   const [form] = Form.useForm();
 
   return (
@@ -21,7 +24,11 @@ export default function ChangePassStudent() {
           style={{ marginBottom: 20 }}
         >
           <h3>Đổi mật khẩu</h3>
-          <Descriptions bordered column={1}>
+          <Descriptions
+            bordered
+            column={1}
+            layout={viewPort <= 576 ? "vertical" : "horizontal"}
+          >
             <Descriptions.Item
               label={
                 <>

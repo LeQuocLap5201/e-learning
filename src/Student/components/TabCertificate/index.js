@@ -41,7 +41,7 @@ export default function TabCertificate() {
           />
         </Col>
       </Row>
-      <Row style={{ marginTop: 15 }}>
+      <Row style={{ margin: "15px 0" }}>
         <Pagination
           style={{ marginLeft: "auto" }}
           simple
@@ -50,16 +50,16 @@ export default function TabCertificate() {
         />
       </Row>
       <Row gutter={[16, 16]}>
-        <Col span={8}>
+        <Col lg={8} xl={8} md={12} xs={24}>
           <CardCertificate />
         </Col>
-        <Col span={8}>
+        <Col lg={8} xl={8} md={12} xs={24}>
           <CardCertificate />
         </Col>
-        <Col span={8}>
+        <Col lg={8} xl={8} md={12} xs={24}>
           <CardCertificate />
         </Col>
-        <Col span={8}>
+        <Col lg={8} xl={8} md={12} xs={24}>
           <CardCertificate />
         </Col>
       </Row>

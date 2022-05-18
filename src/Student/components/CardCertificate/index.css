@@ -37,3 +37,9 @@
 .drawer-certificate__p {
   font-size: 14px;
 }
+
+@media screen and (max-width: 400px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}

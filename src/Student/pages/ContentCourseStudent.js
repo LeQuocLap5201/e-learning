@@ -10,8 +10,11 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import { Link } from "react-router-dom";
+import useViewport from "../../hooks/useViewport";
 
 export default function ContentCourseStudent() {
+  const viewPort = useViewport();
+
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isSuccess, setSuccess] = useState(false);
@@ -50,7 +53,10 @@ export default function ContentCourseStudent() {
         <br />
         <Tabs defaultActiveKey={1} type="card">
           <Tabs.TabPane tab="Link Video" key={1}>
-            <ReactPlayer url="https://www.youtube.com/watch?v=5Q2Pc-e-8Qc" />
+            <ReactPlayer
+              {...(viewPort <= 720 ? { width: "100%" } : {})}
+              url="https://www.youtube.com/watch?v=5Q2Pc-e-8Qc"
+            />
           </Tabs.TabPane>
           <Tabs.TabPane tab="File PDF" key={2}>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">

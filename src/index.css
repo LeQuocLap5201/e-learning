@@ -97,3 +97,25 @@ code {
   font-size: 24px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 720px) {
+  .btn-fixed {
+    bottom: 100px;
+    left: initial;
+    right: 10px;
+    height: initial;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 25px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+      rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    background: rgb(139, 198, 236);
+    background: linear-gradient(
+      135deg,
+      rgba(139, 198, 236, 1) 0%,
+      rgba(149, 153, 226, 1) 100%
+    );
+    border-color: transparent;
+  }
+}

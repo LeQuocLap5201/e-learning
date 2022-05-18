@@ -10,3 +10,11 @@
 .test-question__title {
   margin-bottom: 10px;
 }
+
+.test-fail {
+  color: red;
+}
+
+.test-fail .ant-radio-wrapper-checked span:last-child {
+  color: red;
+}

@@ -17,8 +17,7 @@ function CardCourse(props) {
         />
         <div className="card-course__content">
           <h4>Test bài học ngày 14</h4>
-          <p className="staff">My Trinh</p>
-          <p className="position">Giám đốc Trung Tâm</p>
+          <p>My Trinh - Giám đốc Trung Tâm</p>
           <div className="card-course__tag">
             <div className="course-tag">Học xong</div>
             <div className="course-tag">Pass</div>
