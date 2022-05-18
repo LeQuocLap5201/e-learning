@@ -87,6 +87,10 @@ code {
   transform: translate(50%, -50%) !important;
 }
 
+.splide__arrow:disabled {
+  cursor: not-allowed;
+}
+
 .btn-fixed {
   position: fixed;
   bottom: 0;
