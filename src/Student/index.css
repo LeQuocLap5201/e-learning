@@ -22,7 +22,7 @@
 .header-student {
   display: flex;
   align-items: center;
-  background-color: #36516d;
+  background-color: #9599e2;
   padding: 0 70px;
 }
 
@@ -49,15 +49,23 @@
 }
 
 .menu-student {
-  width: 410px;
+  width: 420px;
   margin-left: auto;
-  background-color: #36516d;
+  background-color: #9599e2;
   border-bottom: none;
 }
 
-.menu-student .ant-menu-item-selected {
+.menu-student .ant-menu-item {
   font-weight: 700;
 }
+
+.main-student .ant-menu-item::after {
+  border-color: #fff !important;
+}
+
+/* .menu-student .ant-menu-item-selected {
+  font-weight: 700;
+} */
 
 .menu-student .ant-menu-title-content a {
   color: #fff;

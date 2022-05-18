@@ -2,6 +2,20 @@ footer {
   padding-bottom: 15px;
 }
 
+footer h3 {
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 720px) {
   footer {
     display: none;

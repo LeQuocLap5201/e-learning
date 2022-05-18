@@ -19,6 +19,12 @@ code {
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #ddd;
+  /* background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 100%
+  ); */
 }
 
 .btn-primary {

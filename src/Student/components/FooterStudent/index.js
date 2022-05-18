@@ -2,5 +2,5 @@ import React from "react";
 import "./index.css";
 
 export default function FooterStudent() {
-  return <footer>Copyright © 2022</footer>;
+  return <footer><h3>Copyright © 2022</h3></footer>;
 }
