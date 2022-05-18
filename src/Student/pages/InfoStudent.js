@@ -19,44 +19,44 @@ export default function InfoStudent() {
         </div>
         <Card className="info-student__card">
           <Row gutter={[16, 10]}>
-            <Col span={10}>Họ và tên</Col>
-            <Col span={14}>
+            <Col span={8}>Họ và tên</Col>
+            <Col span={16}>
               <b>Admin 1</b>
             </Col>
-            <Col span={10}>Tên đăng nhập</Col>
-            <Col span={14}>
+            <Col span={8}>Tên đăng nhập</Col>
+            <Col span={16}>
               <b>LRTNguyetbich</b>
             </Col>
-            <Col span={10}>Email</Col>
-            <Col span={14}>
+            <Col span={8}>Email</Col>
+            <Col span={16}>
               <b>lrtnguyetbich@lubrytics.com</b>
             </Col>
-            <Col span={10}>Số điện thoại</Col>
-            <Col span={14}>
+            <Col span={8}>Số điện thoại</Col>
+            <Col span={16}>
               <b>0345678900</b>
             </Col>
-            <Col span={10}>Đơn vị công tác</Col>
-            <Col span={14}>
+            <Col span={8}>Đơn vị công tác</Col>
+            <Col span={16}>
               <b>Bệnh viện Chợ Rẫy</b>
             </Col>
-            <Col span={10}>Đối tượng</Col>
-            <Col span={14}>
+            <Col span={8}>Đối tượng</Col>
+            <Col span={16}>
               <b>Giáo sư, Tiến sĩ, PGS, Tiến sĩ, Tiến sĩ, Bác sĩ</b>
             </Col>
-            <Col span={10}>Khoa/ Phòng/ Đơn vị</Col>
-            <Col span={14}>
+            <Col span={8}>Khoa/ Phòng/ Đơn vị</Col>
+            <Col span={16}>
               <b>Phòng Điều Dưỡng</b>
             </Col>
-            <Col span={10}>Học vị</Col>
-            <Col span={14}>
+            <Col span={8}>Học vị</Col>
+            <Col span={16}>
               <b>TS.BS</b>
             </Col>
-            <Col span={10}>Chức vụ</Col>
-            <Col span={14}>
+            <Col span={8}>Chức vụ</Col>
+            <Col span={16}>
               <b>Khác</b>
             </Col>
-            <Col span={10}>Ngày kích hoạt</Col>
-            <Col span={14}>
+            <Col span={8}>Ngày kích hoạt</Col>
+            <Col span={16}>
               <b>22-01-2021</b>
             </Col>
           </Row>

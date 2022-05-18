@@ -2,6 +2,10 @@
   padding: 0 70px;
 }
 
+.login-student {
+  height: 100vh;
+}
+
 .login-student__logo {
   background-color: #a9dbc1;
   min-height: 250px;
@@ -319,6 +323,19 @@
 
   .content-test-student .btn-fixed {
     bottom: 10px !important;
+  }
+
+  .courses-student {
+    padding-bottom: 70px;
+  }
+
+  .content-course-student {
+    margin-bottom: 150px;
+  }
+
+  .change-pass-student,
+  .info-student {
+    margin-bottom: 90px;
   }
 }
 
