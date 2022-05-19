@@ -498,6 +498,10 @@
 }
 
 @media screen and (max-width: 720px) {
+  .home-student {
+    margin-bottom: 90px !important;
+  }
+
   .ant-layout-content {
     padding: 0 20px;
   }
