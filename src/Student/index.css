@@ -24,6 +24,7 @@
   align-items: center;
   background-color: #9599e2;
   padding: 0 70px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .header-student .logo-mobile {
@@ -75,8 +76,58 @@
   color: #fff;
 }
 
+.student-dropdown .ant-dropdown-menu-item:first-child {
+  background-color: #9599e2;
+  color: #fff;
+}
+
+.student-dropdown
+  .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child) {
+  color: #9599e2;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.student-dropdown
+  .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child)
+  a {
+  display: flex;
+  align-items: center;
+}
+
+.student-dropdown
+  .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child):hover {
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    45deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 20%
+  );
+  color: #fff;
+}
+
+.student-dropdown
+  .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child)
+  .anticon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
 .main-student {
   margin-top: 30px;
+}
+
+.home-student h3 {
+  color: #9599e2;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.home-student a.link-hover {
+  color: #9599e2;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .introduce-student h3 {
@@ -118,10 +169,37 @@
 }
 
 .info-student__card {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 3px #ddd;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background: rgb(149, 153, 226);
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 70%,
+    rgba(139, 198, 236, 1) 100%
+  );
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  /* border: 1px solid #ddd; */
+  /* box-shadow: 3px 3px 3px #ddd; */
+}
+
+.info-student__card .ant-card-body {
+  display: flex;
+  align-items: center;
+}
+
+.info-student__card .ant-row {
+  width: 50%;
+  flex: 1;
+}
+
+.info-student__card .info-svg {
+  height: 250px;
 }
 
 .change-pass-student .ant-form-item {
@@ -131,6 +209,7 @@
 .change-pass-student h3 {
   font-size: 20px;
   font-weight: 700;
+  color: #9599e2;
 }
 
 .detail-course__title {
@@ -143,16 +222,51 @@
   font-weight: 600;
 }
 
+.detail-course__left {
+  padding: 15px;
+  background: rgb(139, 198, 236);
+  background: radial-gradient(
+    circle,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 50%
+  );
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.detail-course__left b {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.detail-course__left b.thematic-title {
+  font-size: 20px;
+}
+
+.detail-course__left .btn-bg {
+  border-radius: 15px;
+  font-size: 15px;
+}
+
 .detail-course__left img {
-  width: 80%;
+  width: 100%;
   height: 250px;
+  border-radius: 20px;
   object-fit: cover;
   margin-bottom: 30px;
 }
 
+.detail-course__right {
+  padding: 0 30px;
+}
+
 .detail-course__right p:first-child {
+  color: #9599e2;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .rpv-core__viewer {
@@ -209,6 +323,33 @@
 
 .content-test-student .content-test-student__list {
   padding-bottom: 90px;
+}
+
+.results-student .ant-tabs-nav::before,
+.content-course-student .ant-tabs-nav::before {
+  border-color: #9599e2;
+}
+
+.results-student .ant-tabs-tab,
+.content-course-student .ant-tabs-tab {
+  border-radius: 5px 5px 0 0 !important;
+  border-color: #9599e2 !important;
+  background-color: #9599e2 !important;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.results-student .ant-tabs-tab-active,
+.content-course-student .ant-tabs-tab-active {
+  border-color: #9599e2 !important;
+  background-color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+
+.results-student .ant-tabs-tab-active .ant-tabs-tab-btn,
+.content-course-student .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #9599e2 !important;
 }
 
 .nav-mobile {
@@ -269,6 +410,73 @@
   font-size: 18px;
 }
 
+.modal-custom .ant-modal-content .ant-modal-header {
+  background-color: #9599e2;
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 0%,
+    rgba(142, 184, 233, 1) 75%,
+    rgba(149, 153, 226, 1) 100%
+  );
+}
+
+.modal-custom .ant-modal-content .ant-modal-header .ant-modal-title,
+.modal-custom .ant-modal-content .ant-modal-close {
+  color: #fff;
+}
+
+.list-search {
+  margin-top: 10px;
+}
+
+.list-search .ant-list-item {
+  border: none;
+}
+
+.list-search__item a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 30%
+  );
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.list-search__item a img {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.content-course-student h3 {
+  color: #9599e2;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  .info-student__card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info-student__card {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .header-student__title {
     display: none;
@@ -282,10 +490,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .detail-course__left img {
-    width: 100%;
-  }
   .detail-course__right {
+    padding: 0;
     margin-top: 20px;
     margin-bottom: 80px;
   }
@@ -345,11 +551,31 @@
   .info-student {
     margin-bottom: 90px;
   }
+
+  .results-student {
+    margin-bottom: 90px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .info-svg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .content-test-student .ant-result-extra a,
   .content-test-student .ant-result-extra button {
     margin: 3px;
+  }
+
+  .info-student__card {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .info-student__card {
+    font-size: 12px;
   }
 }

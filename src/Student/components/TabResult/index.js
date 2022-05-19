@@ -2817,7 +2817,7 @@ export default function TabResult() {
   return (
     <div className="tab-result">
       <h3>Danh sách kết quả bài thi</h3>
-      <Row style={{ marginTop: 15 }}>
+      <Row style={{ marginTop: 15, marginBottom: 15 }}>
         <Pagination
           style={{ marginLeft: "auto" }}
           simple
@@ -2825,18 +2825,11 @@ export default function TabResult() {
           total={2}
         />
       </Row>
-      <Collapse ghost>
+      <Collapse ghost className="tab-result-collapse">
         {data.map((subject) => (
           <Collapse.Panel header={subject?.title} key={subject?.id}>
             {subject?.child_list?.map((child) => (
-              <Space
-                style={{
-                  width: "100%",
-                  justifyContent: "space-between",
-                  marginBottom: 5,
-                }}
-                key={child?.id}
-              >
+              <Space key={child?.id} className="tab-result-space">
                 <span>{child?.title}</span>
                 <Button
                   onClick={() => {
@@ -2846,7 +2839,7 @@ export default function TabResult() {
                   }}
                   type="link"
                 >
-                  Xem kết quả
+                  <span className="link-hover">Xem kết quả</span>
                 </Button>
               </Space>
             ))}
@@ -2868,6 +2861,7 @@ export default function TabResult() {
           setVisible(false);
         }}
         visible={visible}
+        className='tab-result-drawer'
       >
         {drawerData.map((exam, index) => (
           <div style={{ margin: "40px 0" }}>

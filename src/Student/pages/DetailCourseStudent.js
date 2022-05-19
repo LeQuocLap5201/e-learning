@@ -161,14 +161,14 @@ export default function DetailCourseStudent() {
                   <Button
                     htmlType="submit"
                     type="primary"
-                    className="btn-primary"
+                    className="btn-bg"
                   >
                     Thi chuyên đề
                   </Button>
                 </Link>
               </Col>
               <Col span={24}>
-                <b>Giới thiệu chuyên đề</b>
+                <b className="thematic-title">Giới thiệu chuyên đề</b>
               </Col>
               <Col span={24}>Giới thiệu chuyên đề CR-59-MGLAG</Col>
             </Row>
@@ -200,7 +200,7 @@ export default function DetailCourseStudent() {
                 : `${treeSelected?.id}`
             }
           >
-            <Button className="btn-primary btn-fixed" type="primary">
+            <Button className="btn-student btn-fixed" type="primary">
               {treeSelected?.exam_info?.status === -2
                 ? "Thi lại"
                 : treeSelected?.progress_info?.status === 2

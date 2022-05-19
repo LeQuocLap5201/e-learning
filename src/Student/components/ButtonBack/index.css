@@ -1,0 +1,13 @@
+.button-back {
+  padding: 0;
+  color: #9599e2;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.button-back:hover {
+  color: #9599e2;
+  letter-spacing: 0;
+}

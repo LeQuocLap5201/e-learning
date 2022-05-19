@@ -1,13 +1,77 @@
 .tab-certificate__card {
   width: 50%;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 3px #ddd;
+  /* border: 1px solid #ddd; */
+  border: none;
+  /* box-shadow: 3px 3px 3px #ddd; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-bottom: 40px;
+  background: rgb(149, 153, 226);
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 70%,
+    rgba(139, 198, 236, 1) 100%
+  );
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab-certificate__card .ant-card-body {
+  display: flex;
+  align-items: center;
+}
+
+.tab-certificate__card .ant-row {
+  width: 50%;
+  flex: 1;
+}
+
+.tab-certificate__card .certificate-svg {
+  margin-bottom: -24px;
+  height: 150px;
+}
+
+.tab-certificate__card .anticon {
+  font-size: 20px;
+}
+
+.tab-certificate h3 {
+  color: #9599e2;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tab-certificate .ant-pagination li {
+  color: #9599e2;
+  font-weight: 600;
+}
+
+.tab-certificate .ant-pagination li button {
+  font-size: 18px;
+  color: #9599e2;
+}
+
+.tab-certificate .ant-pagination .ant-pagination-simple-pager input {
+  border-color: #9599e2;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.tab-certificate .ant-pagination .ant-pagination-simple-pager input:focus {
+  box-shadow: 0 0 5px 5px rgb(149 153 226 / 20%);
+  background-color: #9599e2;
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
   .tab-certificate__card {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tab-certificate__card .certificate-svg {
+    display: none;
   }
 }

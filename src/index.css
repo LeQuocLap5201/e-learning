@@ -39,6 +39,34 @@ code {
   border-color: #37587b;
 }
 
+.btn-student {
+  font-weight: 600;
+  background-color: #9599e2;
+  border-color: #9599e2;
+  transition: 0.5s;
+}
+
+.btn-student:hover,
+.btn-student:focus {
+  background-color: #8bc6ec;
+  border-color: #8bc6ec;
+}
+
+.btn-bg {
+  font-weight: 600;
+  background-color: #fff;
+  border-color: #fff;
+  color: #9599e2;
+  transition: 0.5s;
+}
+
+.btn-bg:hover,
+.btn-bg:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
 .ant-picker {
   width: 100%;
 }
@@ -65,8 +93,10 @@ code {
 }
 
 .btn-search .ant-input-search-button {
-  background-color: #36516d;
-  border: #36516d;
+  /* background-color: #36516d;
+  border: #36516d; */
+  background-color: #9599e2;
+  border: #9599e2;
 }
 
 .ant-drawer-header-title {
@@ -74,7 +104,7 @@ code {
 }
 
 .text-gray {
-  color: #888;
+  color: #888 !important;
 }
 
 .splide__arrow {
@@ -106,6 +136,28 @@ code {
   height: 60px;
   font-size: 24px;
   font-weight: 600;
+}
+
+.link-hover {
+  position: relative;
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: 0.3s;
+}
+
+.link-hover:hover::before {
+  width: 0;
+  right: auto;
+  left: 0;
 }
 
 @media screen and (max-width: 720px) {

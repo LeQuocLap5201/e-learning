@@ -119,7 +119,7 @@ export default function ChangePassStudent() {
               marginTop: 15,
             }}
           >
-            <Button htmlType="submit" type="primary" className="btn-primary">
+            <Button htmlType="submit" type="primary" className="btn-student">
               Đổi mật khẩu
             </Button>
           </Space>

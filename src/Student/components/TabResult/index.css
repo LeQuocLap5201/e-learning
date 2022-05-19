@@ -1,6 +1,89 @@
 .tab-result h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
+  color: #9599e2;
+  letter-spacing: 1px;
+}
+
+.tab-result-collapse .ant-collapse-item {
+  margin-bottom: 10px;
+  background: rgb(149, 153, 226);
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 50%,
+    rgba(139, 198, 236, 1) 100%
+  );
+  border-radius: 20px !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tab-result-collapse .ant-collapse-item .ant-collapse-header {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tab-result-space {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.tab-result-space .ant-space-item,
+.tab-result-space .ant-space-item button {
+  color: #9599e2;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.tab-result .ant-pagination li {
+  color: #9599e2;
+  font-weight: 600;
+}
+
+.tab-result .ant-pagination li button {
+  font-size: 18px;
+  color: #9599e2;
+}
+
+.tab-result .ant-pagination .ant-pagination-simple-pager input {
+  border-color: #9599e2;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.tab-result .ant-pagination .ant-pagination-simple-pager input:focus {
+  box-shadow: 0 0 5px 5px rgb(149 153 226 / 20%);
+  background-color: #9599e2;
+  color: #fff;
+}
+
+.tab-result-drawer .ant-drawer-header {
+  background: rgb(149, 153, 226);
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 0%,
+    rgba(142, 184, 233, 1) 75%,
+    rgba(149, 153, 226, 1) 100%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+}
+
+.tab-result-drawer .ant-drawer-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.tab-result-drawer .anticon {
+  color: #fff;
 }
 
 @media screen and (max-width: 400px) {

@@ -16,8 +16,8 @@ function ButtonBack({ title }) {
 
   return (
     <Button
+      className="button-back"
       type="link"
-      style={{ color: "#000", padding: 0 }}
       onClick={() => navigate(-1)}
       icon={<ArrowLeftOutlined />}
     >

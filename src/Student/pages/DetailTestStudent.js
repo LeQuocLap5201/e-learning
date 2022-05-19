@@ -47,7 +47,7 @@ export default function DetailTestStudent() {
         </div>
       </div>
       <Link to={`${5}`}>
-        <Button className="btn-primary btn-fixed" type="primary">
+        <Button className="btn-student btn-fixed" type="primary">
           Bắt đầu thi
         </Button>
       </Link>

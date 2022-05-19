@@ -16,7 +16,7 @@ export default function ContentTestStudent() {
           extra={
             <>
               <Link to="/student/courses/3">
-                <Button type="primary" className="btn-primary">
+                <Button type="primary" className="btn-student">
                   Học tiếp
                 </Button>
               </Link>
@@ -40,12 +40,12 @@ export default function ContentTestStudent() {
           extra={
             <>
               <Link to="/student/test/3">
-                <Button type="primary" className="btn-primary">
+                <Button type="primary" className="btn-student">
                   Thi lại
                 </Button>
               </Link>
               <Link to="/student/courses/3">
-                <Button type="primary" className="btn-primary">
+                <Button type="primary" className="btn-student">
                   Học lại
                 </Button>
               </Link>
@@ -63,7 +63,7 @@ export default function ContentTestStudent() {
         <TestQuestion />
       </div>
       <Button
-        className="btn-primary btn-fixed"
+        className="btn-student btn-fixed"
         type="primary"
         onClick={() => {
           setSuccess(true);
@@ -88,7 +88,7 @@ export default function ContentTestStudent() {
         <Space style={{ width: "100%", justifyContent: "center" }}>
           <Button
             type="primary"
-            className="btn-primary"
+            className="btn-student"
             onClick={() => {
               setSuccess(false);
             }}
@@ -97,7 +97,7 @@ export default function ContentTestStudent() {
           </Button>
           <Button
             type="primary"
-            className="btn-primary"
+            className="btn-student"
             onClick={() => {
               setSuccess(false);
             }}

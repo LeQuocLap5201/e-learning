@@ -2,6 +2,8 @@ import { Card, Col, Row } from "antd";
 import React from "react";
 import ButtonBack from "../components/ButtonBack";
 import FooterStudent from "../components/FooterStudent";
+import Lottie from "lottie-react";
+import Info from "../../lotties/info.json";
 
 export default function InfoStudent() {
   return (
@@ -60,6 +62,12 @@ export default function InfoStudent() {
               <b>22-01-2021</b>
             </Col>
           </Row>
+          <Lottie
+            className="info-svg"
+            animationData={Info}
+            autoPlay={true}
+            loop={true}
+          />
         </Card>
       </div>
       <FooterStudent />

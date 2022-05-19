@@ -1,10 +1,23 @@
 .card-certificate {
   border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 3px #ddd;
-  margin-bottom: 40px;
+  /* border: 1px solid #ddd; */
+  /* box-shadow: 3px 3px 3px #ddd; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  /* margin-bottom: 40px; */
   cursor: pointer;
+  background: rgb(139, 198, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 198, 236, 1) 0%,
+    rgba(149, 153, 226, 1) 40%
+  );
 }
+
+.card-certificate .ant-card-body {
+  padding: 15px;
+}
+
 .drawer-certificate img,
 .card-certificate img {
   width: 100%;
@@ -12,33 +25,74 @@
   object-fit: cover;
 }
 
-.card-certificat__title {
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 25px;
+.drawer-certificate .bg-img {
+  padding: 15px;
+  background: rgb(149, 153, 226);
+  background: linear-gradient(
+    135deg,
+    rgba(149, 153, 226, 1) 40%,
+    rgba(139, 198, 236, 1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-bottom: 20px;
+}
+
+.drawer-certificate img {
+  height: 180px;
+  border-radius: 10px;
+}
+
+.card-certificate img {
+  border-radius: 10px;
 }
 
 .card-certificat__content p {
   margin-bottom: 0;
   font-size: 14px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.card-certificat__content p span {
+  font-style: normal;
+  color: #fff;
+}
+
+.card-certificat__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .card-certificat__content p.text-gray {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .drawer-certificate__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 25px 0;
+  color: #9599e2;
+  margin-bottom: 25px;
+}
+
+.drawer-certificate__title--list {
   font-size: 18px;
-  font-weight: 600;
 }
 
 .drawer-certificate__p {
   font-size: 14px;
+  font-weight: 500;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .ant-drawer-content-wrapper {
     width: 100% !important;
   }

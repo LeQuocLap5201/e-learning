@@ -16,14 +16,14 @@ function CardCertificate(props) {
         onClick={() => {
           setVisibleDrawer(true);
         }}
+        bordered={false}
       >
         <img src="/img/default.jpg" alt="thumbnail" />
         <p className="card-certificat__title">Test bài học ngày 14</p>
         <div className="card-certificat__content">
-          <p>My Trinh</p>
-          <p className="text-gray">Giám đốc Trung Tâm</p>
+          <p>My Trinh - Giám đốc Trung Tâm</p>
           <p
-            className="text-gray"
+            // className="text-gray"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -32,11 +32,11 @@ function CardCertificate(props) {
           >
             Bv. Chợ Rẫy
             <span
-              style={{ color: "#006BD7" }}
               onClick={(e) => {
                 e.stopPropagation();
                 setIsModalVisible(true);
               }}
+              className="link-hover"
             >
               Xem kết quả
             </span>
@@ -66,7 +66,9 @@ function CardCertificate(props) {
         width={500}
       >
         <div className="drawer-certificate">
-          <img src="/img/default.jpg" alt="thumbnail" />
+          <div className="bg-img">
+            <img src="/img/default.jpg" alt="thumbnail" />
+          </div>
           <p className="card-certificat__title drawer-certificate__title">
             Test bài học ngày 14
           </p>
@@ -74,8 +76,7 @@ function CardCertificate(props) {
             className="card-certificat__content"
             style={{ marginBottom: 20 }}
           >
-            <p>My Trinh</p>
-            <p className="text-gray">Giám đốc Trung Tâm</p>
+            <p className="text-gray">My Trinh - Giám đốc Trung Tâm</p>
             <p
               className="text-gray"
               style={{
@@ -86,7 +87,8 @@ function CardCertificate(props) {
             >
               Bv. Chợ Rẫy
               <span
-                style={{ color: "#006BD7", cursor: "pointer" }}
+                className="link-hover"
+                style={{ color: "#9599e2", cursor: "pointer" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsModalVisible(true);
@@ -96,7 +98,7 @@ function CardCertificate(props) {
               </span>
             </p>
           </div>
-          <p className="card-certificat__title drawer-certificate__title">
+          <p className="drawer-certificate__title drawer-certificate__title--list">
             Danh sách chương có thành tích
           </p>
           <p
@@ -109,7 +111,8 @@ function CardCertificate(props) {
           >
             Bv. Chợ Rẫy
             <span
-              style={{ color: "#006BD7", cursor: "pointer" }}
+              className="link-hover"
+              style={{ color: "#9599e2", cursor: "pointer" }}
               onClick={(e) => {
                 e.stopPropagation();
                 setIsModalVisible(true);

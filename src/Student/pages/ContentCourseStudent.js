@@ -41,7 +41,7 @@ export default function ContentCourseStudent() {
           <Button
             type="primary"
             icon={<EditOutlined />}
-            className="btn-primary"
+            className="btn-student"
             onClick={() => {
               setIsModalVisible(true);
             }}
@@ -68,6 +68,7 @@ export default function ContentCourseStudent() {
           </Tabs.TabPane>
         </Tabs>
         <Modal
+          className="modal-custom"
           title="Ghi chú"
           visible={isModalVisible}
           onOk={() => {
@@ -83,7 +84,7 @@ export default function ContentCourseStudent() {
               <Input.TextArea rows={5} placeholder="Nhập nội dung ghi chú" />
             </Form.Item>
             <Space style={{ width: "100%", justifyContent: "flex-end" }}>
-              <Button htmlType="submit" type="primary" className="btn-primary">
+              <Button htmlType="submit" type="primary" className="btn-student">
                 Lưu ghi chú
               </Button>
             </Space>
@@ -91,7 +92,7 @@ export default function ContentCourseStudent() {
         </Modal>
       </div>
       <Button
-        className="btn-primary btn-fixed"
+        className="btn-student btn-fixed"
         type="primary"
         onClick={() => {
           setSuccess(true);
@@ -100,6 +101,7 @@ export default function ContentCourseStudent() {
         Hoàn thành chương
       </Button>
       <Modal
+        className="modal-custom"
         title="Hoàn thành chương"
         visible={isSuccess}
         onOk={() => {
@@ -112,7 +114,7 @@ export default function ContentCourseStudent() {
       >
         <Space style={{ width: "100%", justifyContent: "center" }}>
           <Link to="/student/test/2">
-            <Button type="primary" className="btn-primary">
+            <Button type="primary" className="btn-student">
               Làm bài thi
             </Button>
           </Link>

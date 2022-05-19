@@ -50,10 +50,13 @@ export default function HomeStudent() {
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
+            marginBottom: 15,
           }}
         >
           <h3>Tiến độ học của bạn</h3>
-          <Link to="/student/courses">Xem thêm</Link>
+          <Link to="/student/courses" className="link-hover">
+            Xem thêm
+          </Link>
         </Space>
         <Splide options={options} aria-label="Learning progress">
           <SplideSlide>
@@ -73,6 +76,7 @@ export default function HomeStudent() {
           style={{
             width: "100%",
             marginTop: 40,
+            marginBottom: 15,
           }}
         >
           <h3>Chuyên đề khác</h3>
