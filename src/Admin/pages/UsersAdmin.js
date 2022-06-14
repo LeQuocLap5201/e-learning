@@ -1,8 +1,11 @@
 import { Col, Form, Input, Select } from "antd";
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import FormFilterAdmin from "../components/FormFilterAdmin";
 import HeadingAdmin from "../components/HeadingAdmin";
 import UsersMainAdmin from "../components/MainAdmin/UsersMainAdmin";
+
+const queryString = require("query-string");
 
 const listInput = [
   <Col span={6} key={1}>
@@ -40,8 +43,11 @@ const listInput = [
 ];
 
 export default function UsersAdmin() {
+  // Get Params URL
+  const location = useLocation();
+  const queryParams = queryString.parse(location.search);
   // Data filter
-  const [filter, setFilter] = useState({});
+  const [filter, setFilter] = useState(queryParams);
 
   const filterChange = (val) => {
     const newVal = {
@@ -52,6 +58,8 @@ export default function UsersAdmin() {
     };
     setFilter({ ...newVal });
   };
+
+  console.log("filter: ", filter);
 
   return (
     <>

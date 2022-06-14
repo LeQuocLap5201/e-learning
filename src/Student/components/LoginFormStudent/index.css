@@ -3,6 +3,10 @@
   transform: translateY(-150px);
 }
 
+.login-form-student__card {
+  border-radius: 20px;
+}
+
 .login-form-student__form {
   justify-content: center;
 }
@@ -11,7 +15,7 @@
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  text-shadow: 2px 2px #ddd;
+  /* text-shadow: 2px 2px #ddd; */
 }
 
 .login-form-student__card {
@@ -23,10 +27,13 @@
 
 .login-form-student__card h2 {
   font-size: 28px;
+  color: #0083b0;
 }
 .login-form-student__card p {
+  font-weight: 500;
   font-size: 14px;
-  color: #808080;
+  /* color: #808080; */
+  color: #00b4db;
 }
 
 .login-form-student__modal .ant-form-item {

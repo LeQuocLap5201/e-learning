@@ -20,6 +20,16 @@ const layoutForm = {
 function AddUser({ showDetail, dataDetail }) {
   const [form] = Form.useForm();
 
+  //Submit
+  const onFinish = (val) => {
+    if (showDetail) {
+      console.log("form-update");
+    } else {
+      const data = JSON.parse(JSON.stringify(val));
+      console.log("form-add: ", data);
+    }
+  };
+
   return (
     <div className="add-user">
       <Card
@@ -32,11 +42,11 @@ function AddUser({ showDetail, dataDetail }) {
           ) : null
         }
       >
-        <Form form={form}>
+        <Form form={form} onFinish={onFinish}>
           <Row>
             <Col span={24}>
               <Form.Item
-                name="username"
+                name="name"
                 label="Tên người dùng"
                 rules={[
                   {
@@ -51,7 +61,7 @@ function AddUser({ showDetail, dataDetail }) {
             </Col>
             <Col span={24}>
               <Form.Item
-                name="phone"
+                name="phoneNumber"
                 label="Số điện thoại"
                 rules={[
                   {
@@ -84,11 +94,11 @@ function AddUser({ showDetail, dataDetail }) {
               </Form.Item>
             </Col>
             <Col span={24}>
-              <Form.Item name="type" label="Quyền hạn" {...layoutForm}>
-                <Select placeholder="Quyền hạn" allowClear defaultValue={2}>
+              <Form.Item name="role" label="Quyền hạn" {...layoutForm}>
+                <Select placeholder="Quyền hạn" allowClear>
                   <Select.Option value={1}>Admin System</Select.Option>
-                  <Select.Option value={2}>Manager</Select.Option>
-                  <Select.Option value={3}>Executive</Select.Option>
+                  {/* <Select.Option value={2}>Manager</Select.Option> */}
+                  {/* <Select.Option value={3}>Executive</Select.Option> */}
                 </Select>
               </Form.Item>
             </Col>

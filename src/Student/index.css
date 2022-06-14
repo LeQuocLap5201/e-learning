@@ -7,7 +7,13 @@
 }
 
 .login-student__logo {
-  background-color: #a9dbc1;
+  /* background-color: #a9dbc1; */
+  background: rgb(0, 180, 219);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 100%
+  );
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -22,7 +28,7 @@
 .header-student {
   display: flex;
   align-items: center;
-  background-color: #9599e2;
+  background-color: #0083b0;
   padding: 0 70px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -52,7 +58,7 @@
 .menu-student {
   width: 420px;
   margin-left: auto;
-  background-color: #9599e2;
+  background-color: #0083b0;
   border-bottom: none;
 }
 
@@ -77,13 +83,13 @@
 }
 
 .student-dropdown .ant-dropdown-menu-item:first-child {
-  background-color: #9599e2;
+  background-color: #0083b0;
   color: #fff;
 }
 
 .student-dropdown
   .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child) {
-  color: #9599e2;
+  color: #0083b0;
   font-weight: 600;
   transition: 0.2s;
 }
@@ -97,11 +103,10 @@
 
 .student-dropdown
   .ant-dropdown-menu-item:not(.ant-dropdown-menu-item:first-child):hover {
-  background: rgb(139, 198, 236);
   background: linear-gradient(
     45deg,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 20%
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 20%
   );
   color: #fff;
 }
@@ -118,14 +123,14 @@
 }
 
 .home-student h3 {
-  color: #9599e2;
+  color: #0083b0;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
 }
 
 .home-student a.link-hover {
-  color: #9599e2;
+  color: #0083b0;
   font-weight: 600;
   font-size: 16px;
 }
@@ -175,11 +180,11 @@
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  background: rgb(149, 153, 226);
+  background: rgb(0, 131, 176);
   background: linear-gradient(
     135deg,
-    rgba(149, 153, 226, 1) 70%,
-    rgba(139, 198, 236, 1) 100%
+    rgba(0, 131, 176, 1) 70%,
+    rgba(0, 180, 219, 1) 100%
   );
   color: #fff;
   font-size: 16px;
@@ -209,7 +214,7 @@
 .change-pass-student h3 {
   font-size: 20px;
   font-weight: 700;
-  color: #9599e2;
+  color: #0083b0;
 }
 
 .detail-course__title {
@@ -224,11 +229,11 @@
 
 .detail-course__left {
   padding: 15px;
-  background: rgb(139, 198, 236);
-  background: radial-gradient(
-    circle,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 50%
+  background: rgb(0, 180, 219);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 100%
   );
   border-radius: 20px;
   color: #fff;
@@ -264,7 +269,7 @@
 }
 
 .detail-course__right p:first-child {
-  color: #9599e2;
+  color: #0083b0;
   margin-bottom: 20px;
   font-size: 18px;
 }
@@ -288,11 +293,11 @@
 }
 
 .detail-course__item.active {
-  background: rgb(139, 198, 236);
+  background: rgb(0, 180, 219);
   background: linear-gradient(
     135deg,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 100%
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 100%
   );
 }
 
@@ -327,14 +332,14 @@
 
 .results-student .ant-tabs-nav::before,
 .content-course-student .ant-tabs-nav::before {
-  border-color: #9599e2;
+  border-color: #0083b0;
 }
 
 .results-student .ant-tabs-tab,
 .content-course-student .ant-tabs-tab {
   border-radius: 5px 5px 0 0 !important;
-  border-color: #9599e2 !important;
-  background-color: #9599e2 !important;
+  border-color: #0083b0 !important;
+  background-color: #0083b0 !important;
   color: #fff;
   font-weight: 600;
   transition: 0.5s;
@@ -342,14 +347,14 @@
 
 .results-student .ant-tabs-tab-active,
 .content-course-student .ant-tabs-tab-active {
-  border-color: #9599e2 !important;
+  border-color: #0083b0 !important;
   background-color: #fff !important;
   border-bottom-color: #fff !important;
 }
 
 .results-student .ant-tabs-tab-active .ant-tabs-tab-btn,
 .content-course-student .ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #9599e2 !important;
+  color: #0083b0 !important;
 }
 
 .nav-mobile {
@@ -358,11 +363,11 @@
   left: 10px;
   right: 10px;
   height: 70px;
-  background: rgb(149, 153, 226);
+  background: rgb(0, 131, 176);
   background: linear-gradient(
     135deg,
-    rgba(149, 153, 226, 1) 70%,
-    rgba(139, 198, 236, 1) 100%
+    rgba(0, 131, 176, 1) 70%,
+    rgba(0, 180, 219, 1) 100%
   );
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -411,12 +416,12 @@
 }
 
 .modal-custom .ant-modal-content .ant-modal-header {
-  background-color: #9599e2;
+  background-color: #0083b0;
   background: linear-gradient(
     135deg,
-    rgba(149, 153, 226, 1) 0%,
+    rgba(0, 131, 176, 1) 0%,
     rgba(142, 184, 233, 1) 75%,
-    rgba(149, 153, 226, 1) 100%
+    rgba(0, 131, 176, 1) 100%
   );
 }
 
@@ -439,11 +444,11 @@
   align-items: center;
   padding: 10px;
   border-radius: 15px;
-  background: rgb(139, 198, 236);
+  background: rgb(0, 180, 219);
   background: linear-gradient(
     135deg,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 30%
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 30%
   );
   color: #fff;
   font-size: 16px;
@@ -460,7 +465,7 @@
 }
 
 .content-course-student h3 {
-  color: #9599e2;
+  color: #0083b0;
   font-weight: 600;
   font-size: 18px;
 }

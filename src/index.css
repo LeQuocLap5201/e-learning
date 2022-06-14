@@ -19,11 +19,11 @@ code {
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #ddd;
-  /* background: rgb(139, 198, 236);
+  /* background: rgb(0, 180, 219);
   background: linear-gradient(
     135deg,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 100%
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 100%
   ); */
 }
 
@@ -41,22 +41,22 @@ code {
 
 .btn-student {
   font-weight: 600;
-  background-color: #9599e2;
-  border-color: #9599e2;
+  background-color: #0083b0;
+  border-color: #0083b0;
   transition: 0.5s;
 }
 
 .btn-student:hover,
 .btn-student:focus {
-  background-color: #8bc6ec;
-  border-color: #8bc6ec;
+  background-color: #00b4db;
+  border-color: #00b4db;
 }
 
 .btn-bg {
   font-weight: 600;
   background-color: #fff;
   border-color: #fff;
-  color: #9599e2;
+  color: #0083b0;
   transition: 0.5s;
 }
 
@@ -95,8 +95,8 @@ code {
 .btn-search .ant-input-search-button {
   /* background-color: #36516d;
   border: #36516d; */
-  background-color: #9599e2;
-  border: #9599e2;
+  background-color: #0083b0;
+  border: #0083b0;
 }
 
 .ant-drawer-header-title {
@@ -172,11 +172,10 @@ code {
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
       rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
-    background: rgb(139, 198, 236);
     background: linear-gradient(
       135deg,
-      rgba(139, 198, 236, 1) 0%,
-      rgba(149, 153, 226, 1) 100%
+      rgba(0, 180, 219, 1) 0%,
+      rgba(0, 131, 176, 1) 100%
     );
     border-color: transparent;
   }

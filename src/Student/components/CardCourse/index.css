@@ -1,10 +1,10 @@
 .card-course {
   border-radius: 20px;
-  background: rgb(139, 198, 236);
+  background: rgb(0, 180, 219);
   background: linear-gradient(
     135deg,
-    rgba(139, 198, 236, 1) 0%,
-    rgba(149, 153, 226, 1) 100%
+    rgba(0, 180, 219, 1) 0%,
+    rgba(0, 131, 176, 1) 100%
   );
   cursor: pointer;
 }
@@ -66,7 +66,7 @@
   margin: 3px 0;
   margin-right: 10px;
   font-weight: 700;
-  color: #8abcdd;
+  color: #00b4db;
   font-size: 12px;
 }
 
@@ -103,7 +103,7 @@
 .course-listbtn button:hover {
   border-color: #fff;
   background-color: #fff;
-  color: #8abcdd;
+  color: #00b4db;
 }
 
 /* @media screen and (max-width: 1200px) {

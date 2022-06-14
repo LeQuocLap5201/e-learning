@@ -88,7 +88,7 @@ function CardCertificate(props) {
               Bv. Chợ Rẫy
               <span
                 className="link-hover"
-                style={{ color: "#9599e2", cursor: "pointer" }}
+                style={{ color: "#0083b0", cursor: "pointer" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsModalVisible(true);
@@ -112,7 +112,7 @@ function CardCertificate(props) {
             Bv. Chợ Rẫy
             <span
               className="link-hover"
-              style={{ color: "#9599e2", cursor: "pointer" }}
+              style={{ color: "#0083b0", cursor: "pointer" }}
               onClick={(e) => {
                 e.stopPropagation();
                 setIsModalVisible(true);

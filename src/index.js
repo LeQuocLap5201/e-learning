@@ -38,99 +38,126 @@ import DetailCourseStudent from "./Student/pages/DetailCourseStudent";
 import ContentCourseStudent from "./Student/pages/ContentCourseStudent";
 import DetailTestStudent from "./Student/pages/DetailTestStudent";
 // import ContentTestStudent from "./Student/pages/ContentTestStudent";
+import PrivateRouteAdmin from "./PrivateRoute/PrivateRouteAdmin";
+import PrivateRouteStudent from "./PrivateRoute/PrivateRouteStudent";
 import { Spin } from "antd";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+const queryClient = new QueryClient();
 
 const LayoutStudent = React.lazy(() => import("./Student/pages/LayoutStudent"));
 const LoginStudent = React.lazy(() => import("./Student/pages/LoginStudent"));
-const ContentTestStudent= React.lazy(() => import("./Student/pages/ContentTestStudent"));
+const ContentTestStudent = React.lazy(() =>
+  import("./Student/pages/ContentTestStudent")
+);
 
-const LayoutAdmin= React.lazy(() => import("./Admin/pages/LayoutAdmin"));
-const LoginAdmin= React.lazy(() => import("./Admin/pages/LoginAdmin"));
+const LayoutAdmin = React.lazy(() => import("./Admin/pages/LayoutAdmin"));
+const LoginAdmin = React.lazy(() => import("./Admin/pages/LoginAdmin"));
 
-const CertificatesDetail= React.lazy(() => import("./CertificatesDetail"));
+const CertificatesDetail = React.lazy(() => import("./CertificatesDetail"));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Suspense
-        fallback={
-          <div
-            style={{
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Spin size="large" />
-          </div>
-        }
-      >
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Navigate to={"/student"} />} />
-            <Route path="student" element={<Student />}>
-              <Route path="" element={<LayoutStudent />}>
-                <Route index element={<Navigate to={"home"} />} />
-                <Route path="home" element={<HomeStudent />} />
-                <Route path="introduce" element={<IntroduceStudent />} />
-                <Route path="courses" element={<CoursesStudent />} />
-                <Route
-                  path="courses/:courseId"
-                  element={<DetailCourseStudent />}
-                />
-                <Route
-                  path="courses/:courseId/:contentId"
-                  element={<ContentCourseStudent />}
-                />
-                <Route path="results" element={<ResultsStudent />} />
-                <Route path="test/:testId" element={<DetailTestStudent />} />
-                <Route path="info" element={<InfoStudent />} />
-                <Route path="changePass" element={<ChangePassStudent />} />
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools />
+      <BrowserRouter>
+        <Suspense
+          fallback={
+            <div
+              style={{
+                height: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Spin size="large" />
+            </div>
+          }
+        >
+          <Routes>
+            <Route path="/" element={<App />}>
+              <Route index element={<Navigate to={"/student"} />} />
+              <Route path="student" element={<Student />}>
+                <Route element={<PrivateRouteStudent />}>
+                  <Route path="" element={<LayoutStudent />}>
+                    <Route index element={<Navigate to={"home"} />} />
+                    <Route path="home" element={<HomeStudent />} />
+                    <Route path="introduce" element={<IntroduceStudent />} />
+                    <Route path="courses" element={<CoursesStudent />} />
+                    <Route
+                      path="courses/:courseId"
+                      element={<DetailCourseStudent />}
+                    />
+                    <Route
+                      path="courses/:courseId/:contentId"
+                      element={<ContentCourseStudent />}
+                    />
+                    <Route path="results" element={<ResultsStudent />} />
+                    <Route
+                      path="test/:testId"
+                      element={<DetailTestStudent />}
+                    />
+                    <Route path="info" element={<InfoStudent />} />
+                    <Route path="changePass" element={<ChangePassStudent />} />
+                  </Route>
+                  <Route
+                    path="test/:testId/:contentId"
+                    element={<ContentTestStudent />}
+                  />
+                </Route>
+                <Route path="login" element={<LoginStudent />} />
+              </Route>
+              <Route path="admin" element={<Admin />}>
+                <Route element={<PrivateRouteAdmin />}>
+                  <Route path="" element={<LayoutAdmin />}>
+                    <Route index element={<Navigate to={"members"} />} />
+                    <Route path="members" element={<MembersAdmin />} />
+                    <Route path="members/add" element={<AddMemberAdmin />} />
+                    <Route
+                      path="members/:memberId"
+                      element={<DetailMemberAdmin />}
+                    />
+                    <Route path="studies" element={<StudiesAdmin />} />
+                    <Route path="studies/add" element={<AddStudiesAdmin />} />
+                    <Route
+                      path="studies/:studyId"
+                      element={<DetailStudyAdmin />}
+                    />
+                    <Route path="e-tests" element={<EtestsAdmin />} />
+                    <Route path="e-tests/add" element={<AddEtestsAdmin />} />
+                    <Route
+                      path="e-tests/:testId"
+                      element={<DetailEtestAdmin />}
+                    />
+                    <Route
+                      path="certificates"
+                      element={<CertificatesAdmin />}
+                    />
+                    <Route
+                      path="certificates/:certificateId"
+                      element={<DetailCertificateAdmin />}
+                    />
+                    <Route path="results" element={<ResultsAdmin />} />
+                    <Route path="users" element={<UsersAdmin />} />
+                    <Route path="users/add" element={<AddUsersAdmin />} />
+                    <Route path="users/:userId" element={<DetailUserAdmin />} />
+                  </Route>
+                </Route>
+                <Route path="login" element={<LoginAdmin />} />
               </Route>
               <Route
-                path="test/:testId/:contentId"
-                element={<ContentTestStudent />}
+                path="certificates/:certificatesId"
+                element={<CertificatesDetail />}
               />
-              <Route path="login" element={<LoginStudent />} />
             </Route>
-            <Route path="admin" element={<Admin />}>
-              <Route path="" element={<LayoutAdmin />}>
-                <Route index element={<Navigate to={"members"} />} />
-                <Route path="members" element={<MembersAdmin />} />
-                <Route path="members/add" element={<AddMemberAdmin />} />
-                <Route
-                  path="members/:memberId"
-                  element={<DetailMemberAdmin />}
-                />
-                <Route path="studies" element={<StudiesAdmin />} />
-                <Route path="studies/add" element={<AddStudiesAdmin />} />
-                <Route path="studies/:studyId" element={<DetailStudyAdmin />} />
-                <Route path="e-tests" element={<EtestsAdmin />} />
-                <Route path="e-tests/add" element={<AddEtestsAdmin />} />
-                <Route path="e-tests/:testId" element={<DetailEtestAdmin />} />
-                <Route path="certificates" element={<CertificatesAdmin />} />
-                <Route
-                  path="certificates/:certificateId"
-                  element={<DetailCertificateAdmin />}
-                />
-                <Route path="results" element={<ResultsAdmin />} />
-                <Route path="users" element={<UsersAdmin />} />
-                <Route path="users/add" element={<AddUsersAdmin />} />
-                <Route path="users/:userId" element={<DetailUserAdmin />} />
-              </Route>
-              <Route path="login" element={<LoginAdmin />} />
-            </Route>
-            <Route
-              path="certificates/:certificatesId"
-              element={<CertificatesDetail />}
-            />
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

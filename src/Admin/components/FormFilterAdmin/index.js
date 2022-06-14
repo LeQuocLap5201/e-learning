@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import "./index.css";
 import { Button, Col, Form, Row } from "antd";
 import { ClearOutlined } from "@ant-design/icons";
 import debounce from "lodash.debounce";
+import { useLocation } from "react-router-dom";
 
 FormFilterAdmin.propTypes = {
   listInput: PropTypes.array,
@@ -15,8 +16,19 @@ FormFilterAdmin.defaultProps = {
   onFilterChange: null,
 };
 
+const queryString = require("query-string");
+
 function FormFilterAdmin({ listInput, onFilterChange }) {
+  // Get Params URL
+  const location = useLocation();
+  const queryParams = queryString.parse(location.search);
+
   const [form] = Form.useForm();
+  const [dataForm, setDataForm] = useState(queryParams);
+
+  useEffect(() => {
+    form.setFieldsValue(dataForm);
+  }, [dataForm, form]);
 
   const debounceFilter = useRef(
     debounce((nextValue) => onFilterChange(nextValue), 1000)

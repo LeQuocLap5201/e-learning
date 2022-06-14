@@ -62,7 +62,7 @@ export default function LoginFormStudent() {
               </Form.Item>
               <Form.Item>
                 <Button
-                  className="btn-primary"
+                  className="btn-primary btn-student"
                   block
                   type="primary"
                   htmlType="submit"
@@ -82,6 +82,7 @@ export default function LoginFormStudent() {
                   onClick={() => {
                     setIsForget(true);
                   }}
+                  style={{ color: "#0083b0" }}
                 >
                   Quên mật khẩu
                 </Button>
@@ -90,6 +91,7 @@ export default function LoginFormStudent() {
                   onClick={() => {
                     setIsRegistration(true);
                   }}
+                  style={{ color: "#0083b0" }}
                 >
                   Đăng ký
                 </Button>
@@ -109,7 +111,7 @@ export default function LoginFormStudent() {
           setIsForget(false);
         }}
         width={950}
-        className="login-form-student__modal"
+        className="login-form-student__modal modal-custom"
         footer={null}
       >
         <Form form={form}>
@@ -229,7 +231,11 @@ export default function LoginFormStudent() {
               marginTop: 15,
             }}
           >
-            <Button htmlType="submit" type="primary" className="btn-primary">
+            <Button
+              htmlType="submit"
+              type="primary"
+              className="btn-primary btn-student"
+            >
               Hoàn thành
             </Button>
           </Space>
@@ -245,7 +251,7 @@ export default function LoginFormStudent() {
           setIsRegistration(false);
         }}
         width={950}
-        className="login-form-student__modal"
+        className="login-form-student__modal modal-custom"
         footer={null}
       >
         <Form>
@@ -461,7 +467,11 @@ export default function LoginFormStudent() {
               marginTop: 15,
             }}
           >
-            <Button htmlType="submit" type="primary" className="btn-primary">
+            <Button
+              htmlType="submit"
+              type="primary"
+              className="btn-primary btn-student"
+            >
               Hoàn thành
             </Button>
           </Space>
